@@ -1,0 +1,32 @@
+baseurl = "/"
+title = "Hugo Terrassa Theme"
+author = "Daniel Zaragoza (Danielkvist)"
+
+defaultContentLanguage = "en"
+language = "en-US"
+
+theme = "terrassa"
+themesDir = "../.."
+
+[params]
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 2
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+

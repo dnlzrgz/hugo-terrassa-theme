@@ -5,11 +5,15 @@ html {
 *,
 *::before,
 *::after {
-        box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 *:focus {
     outline: 0;
+}
+
+a {
+    background-color: transparent;
 }
 
 body {
@@ -30,4 +34,29 @@ h3,
 h4 {
     line-height: 1.2;
     margin: 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+img {
+    border-sytle: none;
+}
+
+main {
+    display: block;
+}
+
+pre,
+code,
+kbd {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+select {
+    text-transform: none;
 }

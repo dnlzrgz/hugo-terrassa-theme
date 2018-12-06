@@ -8,4 +8,4 @@ description: ""
 tags: []
 ---
 
-## Somethign Awesome
+## Something Awesome

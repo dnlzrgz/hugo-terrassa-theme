@@ -1,3 +1,4 @@
+/* HEADER */ 
 .header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -17,4 +18,20 @@
     grid-auto-columns: 1fr;
     grid-auto-flow: column;
     grid-template-columns: repeat(3, 1fr);
+}
+
+/* BANNER */
+.banner {
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    height: 80vh;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.banner-illustration {
+    height: auto;
+    width: 120%;
 }

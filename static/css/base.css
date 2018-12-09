@@ -7,4 +7,11 @@
     --text: 1.3rem;
 
     /* Colors */
+    --primary: #ffc107;
+    --primary-dark: #ffa000;
+    --primary-light: #ffecb3;
+    --primary-text: #212121;
+    --secondary-text: #757575;
+    --accent: #536dfe;
+    --divider: #bdbdbd;
 }

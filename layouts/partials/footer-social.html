@@ -1,0 +1,33 @@
+<div class="footer-social">
+    {{ if .Site.Data.social.codepen }}
+    <a href="https://codepen.io/{{ .Site.Data.social.codepen }}" class="social-link" alt="CodePen">CodePen</a>
+    {{ end }}
+
+    {{ if .Site.Data.social.facebook }}
+    <a href="https://www.facebook.com/{{ .Site.Data.social.facebook }}" class="social-link" alt="Facebook">Facebook</a>
+    {{ end }}
+
+    {{ if .Site.Data.social.github }}
+    <a href="https://github.com/{{ .Site.Data.social.github }}" class="social-link" alt="GitHub">GitHub</a>
+    {{ end }}
+
+    {{ if .Site.Data.social.gitlab }}
+    <a href="https://gitlab.com/{{ .Site.Data.social.gitlab }}" class="social-link" alt="GitLab">GitLab</a>
+    {{ end }}
+
+    {{ if .Site.Data.social.instagram }}
+    <a href="https://instagram.com/{{ .Site.Data.social.instagram }}" class="social-link" alt="Instagram">Instagram</a>
+    {{ end }}
+
+    {{ if .Site.Data.social.linkedin }}
+    <a href="https://linkedin.com/in/{{ .Site.Data.social.linkedin }}" class="social-link" alt="Linkedin">Linkedin</a>
+    {{ end }}
+
+    {{ if .Site.Data.social.pinterest }}
+    <a href="https://pinterest.com/{{ .Site.Data.social.pinterest }}" class="social-link" alt="Pinterest">Pinterest</a>
+    {{ end }}
+
+    {{ if .Site.Data.social.twitter }}
+    <a href="https://twitter.com/{{ .Site.Data.social.twitter }}" alt="Twitter">Twitter</a>
+    {{ end }}
+</div>

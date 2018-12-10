@@ -1,0 +1,13 @@
+<div class="footer-contact">
+    {{ if .Site.Data.contact.email }}
+    <a href="{{ .Site.Data.contact.email}}" class="contact-link" alt="Email">{{ .Site.Data.contact.email }}</a>
+    {{ end }}
+
+    {{ if .Site.Data.contact.phone }}
+    <a href="{{ .Site.Data.contact.phone }}" class="contact-link" alt="Phone">{{ .Site.Data.contact.phone }}</a>
+    {{ end }}
+
+    {{ if .Site.Data.contact.address }}
+    <address>{{ .Site.Data.contact.address }}</address>
+    {{ end }}
+</div>

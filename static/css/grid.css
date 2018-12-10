@@ -35,3 +35,43 @@
     height: auto;
     width: 120%;
 }
+
+/* FOOTER */
+.footer {
+    display: grid;
+    grid-template-areas: "home links links" "social social social" "contact contact copy";
+}
+
+.footer-home {
+    grid-area: home;
+}
+
+.footer-links {
+    grid-area: links;
+}
+
+.footer-menu {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-social {
+    display: grid;
+    grid-area: social;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-contact {
+    display: grid;
+    grid-area: contact;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.footer-copy {
+    grid-area: copy;
+}

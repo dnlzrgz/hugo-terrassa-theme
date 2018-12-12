@@ -31,9 +31,38 @@
     overflow: hidden;
 }
 
+.banner-content {
+    align-content: center;
+    display: grid;
+    justify-content: center;
+}
+
 .banner-illustration {
     height: auto;
     width: 120%;
+}
+
+/* SERVICES */
+.services {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.service {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.service-header {
+    text-align: center;
+}
+
+.service-description {
+    margin: 10px 0 0 10px;
+    /* FIXME: */
+    text-justify: distribute-all-lines;
 }
 
 /* FOOTER */

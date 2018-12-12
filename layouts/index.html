@@ -5,6 +5,14 @@
 <body>
     {{ partial "header.html" . }}
     {{ partial "banner.html" . }}
+
+    <!-- Services -->
+    <section class="services">
+        {{ range where .Site.RegularPages "Type" "services" }}
+        {{ partial "service.html" .}}
+        {{ end}}
+    </section>
+
     {{ partial "footer.html" . }}
 </body>
 

@@ -2,5 +2,5 @@
     <div class="banner-content">
         {{ .Content }}
     </div>
-    {{ partial "banner-background.html" . }}
+    <img src="{{ .Site.BaseURL }}/images/{{ .Param "image" }}" alt="{{ .Param "alt" }}" class="banner-img">
 </main>

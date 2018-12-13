@@ -1,7 +1,8 @@
 ---
-title: "Terrassa - The Hugo Theme"
-draft: false
+title: "Terrassa"
+image: "undraw_freelancer_b0my.svg"
+alt: "Woman working on her computer."
 ---
 
 # Terrassa
-The Hugo Theme for You.
+The Hugo theme for you. Or for your company.

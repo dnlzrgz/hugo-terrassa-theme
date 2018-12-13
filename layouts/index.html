@@ -7,11 +7,14 @@
     {{ partial "banner.html" . }}
 
     <!-- Services -->
+    {{ $services := where .Site.RegularPages "Type" "services" }}
+    {{ if gt (len $services) 0 }}
     <section class="services">
-        {{ range where .Site.RegularPages "Type" "services" }}
-        {{ partial "service.html" .}}
-        {{ end}}
+        {{ range $services }}
+        {{ .Render "summary" }}
+        {{ end }}
     </section>
+    {{ end }}
 
     {{ partial "footer.html" . }}
 </body>

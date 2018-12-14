@@ -21,7 +21,7 @@ body {
     font-kerning: auto;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothin: antialised;
-    font-weight: 300:
+    font-weight: 300;
     height: 100vh;
     line-height: 1.45;
     margin: 0;
@@ -43,7 +43,7 @@ hr {
 }
 
 img {
-    border-sytle: none;
+    border-style: none;
 }
 
 main {

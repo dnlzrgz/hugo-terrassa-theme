@@ -5,17 +5,6 @@
 <body>
     {{ partial "header.html" . }}
     {{ partial "banner.html" . }}
-
-    <!-- Services -->
-    {{ $services := where .Site.RegularPages "Type" "services" }}
-    {{ if gt (len $services) 0 }}
-    <section class="services">
-        {{ range $services }}
-        {{ .Render "summary" }}
-        {{ end }}
-    </section>
-    {{ end }}
-
     {{ partial "footer.html" . }}
 </body>
 

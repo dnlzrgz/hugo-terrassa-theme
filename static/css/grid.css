@@ -4,20 +4,22 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     height: 3.5rem;
+    position: fixed;
+    top: 0;
     width: 100%;
 }
 
 .header-title {
-    align-content: center;
-    display: grid;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
     margin-left: 3.5rem;
 }
 
 .menu-links {
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 /* BANNER */
@@ -28,18 +30,23 @@
     grid-template-rows: 1fr;
     height: 80vh;
     justify-content: center;
-    overflow: hidden;
 }
 
 .banner-content {
-    align-content: center;
-    display: grid;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin-left: 4.5rem;
 }
 
 .banner-img {
     height: auto;
     width: 120%;
+}
+
+.contact-btn {
+    padding: 15px 75px;
 }
 
 /* FOOTER */

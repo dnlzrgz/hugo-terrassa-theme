@@ -1,0 +1,54 @@
+/* HEADER */
+.header {
+    background-color: white;
+    box-shadow: 0 1px 5px var(--divider);
+}
+
+.title-link {
+    color: var(--primary-dark);
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.menu-links {
+    list-style: none;
+}
+
+.menu-link {
+    transition: color 0.25s;
+    color: var(--primary-text);
+    text-decoration: none;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--primary);
+}
+
+/* BANNER */
+.banner-content>h1 {
+    font-size: var(--title);
+    font-weight: 300;
+}
+
+.banner-content>h2 {
+    font-size: var(--subtitle);
+}
+
+.banner-content>p {
+    font-size: var(--subheader);
+}
+
+.contact-btn {
+    background-color: var(--primary-dark);
+    border: 2px solid var(--primary-dark);
+    color: white;
+    font-weight: 400;
+    transition: all 0.25s;
+    text-decoration: none;
+}
+
+.contact-btn:hover {
+    background-color: white;
+    color: var(--primary-dark);
+}

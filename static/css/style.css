@@ -10,18 +10,22 @@
     text-decoration: none;
 }
 
-.menu-links {
+.menu-links,
+.footer-menu {
     list-style: none;
 }
 
-.menu-link {
+.menu-link,
+.footer-menu-link {
     transition: color 0.25s;
     color: var(--primary-text);
     text-decoration: none;
 }
 
 .menu-link:hover,
-.menu-link:focus {
+.menu-link:focus,
+.footer-menu-link:hover,
+.footer-menu-link:focus {
     color: var(--primary);
 }
 
@@ -51,4 +55,33 @@
 .contact-btn:hover {
     background-color: white;
     color: var(--primary-dark);
+}
+
+/* FOOTER */
+.footer {
+    border-top: 1px solid var(--divider);
+}
+
+.footer-social {
+    border-bottom: 1px solid var(--divider);
+}
+
+.footer-contact,
+.footer-copy {
+    background-color: var(--primary-dark);
+}
+
+.footer-copy {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.social-link {
+    text-decoration: none;
+}
+
+.contact-link {
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
 }

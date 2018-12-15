@@ -1,7 +1,39 @@
 <footer class="footer">
-    {{ partial "footer-home.html" . }}
-    {{ partial "footer-links.html" . }}
-    {{ partial "footer-social.html" . }}
-    {{ partial "footer-contact.html" . }}
-    {{ partial "footer-copyright.html" .}}
+    <div class="footer-social">
+        {{ range $k, $v := .Site.Params.social }}
+        {{ if $v}}
+        <a href="{{ $v }}" class="social-link" alt="{{ $k }}" target="_blank">{{ $k }}</a>
+        {{ end }}
+        {{ end }}
+    </div>
+
+    <div class="footer-contact">
+        {{ if .Site.Params.contact.email }}
+        <p>Email:
+            <a href="mailto:{{ .Site.Params.contact.email}}" class="contact-link" alt="Email">
+                {{ .Site.Params.contact.email }}
+            </a>
+        </p>
+        {{ end }}
+
+        {{ if .Site.Params.contact.phone }}
+        <p>Phone:
+            <a href="tel:{{ .Site.Params.contact.phone }}" class="contact-link" alt="Phone">
+                {{ .Site.Params.contact.phone}}
+            </a>
+        </p>
+        {{ end }}
+
+        {{ if .Site.Params.contact.address }}
+        <address>
+            {{ .Site.Params.contact.address }}
+        </address>
+        {{ end }}
+    </div>
+
+    <div class="footer-copy">
+        <p>© {{ now.Format "2006" }} - {{.Site.Title}}</p>
+    </div>
+
+    {{ partial "footer-scripts.html" . }}
 </footer>

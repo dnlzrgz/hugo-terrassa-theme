@@ -8,8 +8,6 @@ language = "en-US"
 theme = "terrassa"
 themesDir = "../.."
 
-[params]
-
 [[menu.main]]
     name = "Home"
     url = "/"
@@ -34,3 +32,25 @@ themesDir = "../.."
     name = "Contact"
     url = "/contact/"
     weight = 5
+
+[params]
+
+[params.contact]
+    email = "example@gmail.com"
+    phone = "xxx xxx xxx"
+    address = ""
+
+[params.social] # Your social networks
+    twitter = "https://twitter.com/john"
+    facebook = "https://facebook.com/john"
+    github = "https://github.com/john"
+    gitlab = "https://gitlab.com/john"
+    codepen = "https://codepen.io/john"
+    instagram = "https://instagram.com/john"
+    pinterest = "https://pinterest.com/john"
+    youtube = "https://youtube.com/channel/john"
+    linkedin = "https://likedin.com/in/john"
+    weibo = ""
+    wixin = ""
+    mastodon = ""
+    tumblr = ""

@@ -103,18 +103,46 @@
 }
 
 .social-link {
-    text-decoration: none;
-}
-
-.social-link > span {
-    color: var(--primary-text);
+    background-color: var(--primary-text);
+    border-radius: 50%;
+    color: white;
     font-size: var(--text);
-    transition: color 0.25s;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 35px;
 }
 
-.social-link:hover > span,
-.social-link:focus > span {
-    color: var(--accent);
+.social-link:after,
+.social-link:before {
+    background: transparent;
+    border: 2.5px solid var(--primary-text);
+    border-radius: 50%;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.3s all;
+}
+
+.social-link:hover {
+    color: var(--primary-text);
+    background-color: transparent;
+}
+
+.social-link:hover::after {
+    transform: scale(1.5);
+}
+
+.social-link:hover::before {
+    opacity: 0;
+    transform: scale(2);
+    transition: 0.3s all;
 }
 
 .contact-link {

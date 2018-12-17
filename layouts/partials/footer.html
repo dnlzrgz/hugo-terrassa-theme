@@ -2,14 +2,14 @@
     <div class="footer-social">
         {{ range $k, $v := .Site.Params.social }}
         {{ if $v}}
-        <a href="{{ $v }}" class="social-link" alt="{{ $k }}" target="_blank">{{ $k }}</a>
+        <a href="{{ $v }}" class="social-link" alt="{{ $k }}" target="_blank"><span><i class="fab fa-{{ $k }}"></i></span>
+        </a>
         {{ end }}
         {{ end }}
     </div>
-
     <div class="footer-contact">
         {{ if .Site.Params.contact.email }}
-        <p>Email:
+        <p><span><i class="far fa-envelope"></i></span>
             <a href="mailto:{{ .Site.Params.contact.email}}" class="contact-link" alt="Email">
                 {{ .Site.Params.contact.email }}
             </a>
@@ -17,17 +17,20 @@
         {{ end }}
 
         {{ if .Site.Params.contact.phone }}
-        <p>Phone:
+        <p><span><i class="fas fa-phone"></i></span>
             <a href="tel:{{ .Site.Params.contact.phone }}" class="contact-link" alt="Phone">
                 {{ .Site.Params.contact.phone}}
             </a>
         </p>
         {{ end }}
 
+        <!-- FIXME: -->
         {{ if .Site.Params.contact.address }}
-        <address>
-            {{ .Site.Params.contact.address }}
-        </address>
+        <p><span><i class="fas fa-map-marker-alt"></i></span>
+            <address>
+                {{ .Site.Params.contact.address }}
+            </address>
+        </p>
         {{ end }}
     </div>
 

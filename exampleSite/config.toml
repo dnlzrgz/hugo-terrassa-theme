@@ -35,7 +35,12 @@ themesDir = "../.."
 
 [params]
 
-[params.contact]
+[params.cta] # Call To Action 
+    cta = "Contact"
+    link = "example@gmail.com"
+    type = "email"
+
+[params.contact] # Contact info
     email = "example@gmail.com"
     phone = "xxx xxx xxx"
     address = ""
@@ -44,13 +49,12 @@ themesDir = "../.."
     twitter = "https://twitter.com/john"
     facebook = "https://facebook.com/john"
     github = "https://github.com/john"
-    gitlab = "https://gitlab.com/john"
+    gitlab = ""
     codepen = "https://codepen.io/john"
     instagram = "https://instagram.com/john"
-    pinterest = "https://pinterest.com/john"
+    pinterest = ""
     youtube = "https://youtube.com/channel/john"
-    linkedin = "https://likedin.com/in/john"
+    linkedin = ""
     weibo = ""
-    wixin = ""
     mastodon = ""
     tumblr = ""

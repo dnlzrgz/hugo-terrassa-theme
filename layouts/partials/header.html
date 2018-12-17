@@ -8,8 +8,8 @@
     <nav class="menu">
         <ul class="menu-links">
             {{ range .Site.Menus.main }}
-            <li class="menu-links-link">
-                <a href="{{ .URL }}" class="menu-link" alt="{{ .Name }}">{{ .Name }}</a>
+            <li>
+                <a href="{{ .URL }}" class="menu-link" data-hover="{{ .Name }}" alt="{{ .Name }}">{{ .Name }}</a>
             </li>
             {{ end }}
         </ul>

@@ -43,7 +43,7 @@ themesDir = "../.."
 [params.contact] # Contact info
     email = "example@gmail.com"
     phone = "xxx xxx xxx"
-    address = ""
+    address = "419 Creek St. Revere, MA 02151"
 
 [params.social] # Your social networks
     twitter = "https://twitter.com/john"

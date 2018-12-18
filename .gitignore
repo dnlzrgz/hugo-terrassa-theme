@@ -23,8 +23,8 @@
 hugo*
 
 # Generated files at default location
-/public/
-/resources/_gen
+*/public/
+*/resources/_gen
 
 ### Vim ###
 # Swap

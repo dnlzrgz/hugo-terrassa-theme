@@ -148,8 +148,9 @@
 .footer {
     display: grid;
     border-top: 1px solid var(--divider);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "social social" "contact copy"
+    grid-template-areas: ". social social ." "contact contact contact copy"
 }
 
 .footer-social {
@@ -158,26 +159,6 @@
     display: flex;
     grid-area: social;
     justify-content: space-evenly;
-}
-
-.footer-contact,
-.footer-copy {
-    background-color: var(--primary-dark);
-}
-
-.footer-contact {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.footer-copy {
-    align-items: flex-end;
-    display: flex;
-    font-size: 0.9rem;
-    font-weight: 400;
-    grid-area: copy;
-    justify-content: flex-end;
-    padding-right: 3.5rem;
 }
 
 .social-link {
@@ -223,8 +204,43 @@
     transition: 0.3s all;
 }
 
-.contact-link {
+.footer-contact,
+.footer-copy {
+    background-color: var(--primary-dark);
+}
+
+.footer-contact {
+    display: flex;
+    grid-area: contact;
+}
+
+.contact-item {
+    align-items: center;
+    display: flex;
+    margin-left: 3.5rem;
+}
+
+.contact-item > span {
+    color: var(--primary-text);
+    margin-right: 0.5rem;
+}
+
+.contact-link,
+.address {
     color: white;
     font-weight: 400;
+}
+
+.contact-link {
     text-decoration: none;
+}
+
+.footer-copy {
+    align-items: flex-end;
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 400;
+    grid-area: copy;
+    justify-content: flex-end;
+    padding-right: 3.5rem;
 }

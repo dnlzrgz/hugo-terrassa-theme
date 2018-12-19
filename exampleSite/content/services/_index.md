@@ -1,8 +1,7 @@
 ---
 title: "Services"
 draft: true
-description: ""
+menu: main
+name: "Services"
 weight: 1
 ---
-
-# Here go the things you're good at

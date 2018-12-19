@@ -5,11 +5,15 @@
     </div>
 
     <!-- Menu -->
+
     <nav class="menu">
         <ul class="menu-links">
+            {{ $current := . }}
             {{ range .Site.Menus.main }}
             <li>
-                <a href="{{ .URL }}" class="menu-link" data-hover="{{ .Name }}" alt="{{ .Name }}">{{ .Name }}</a>
+                <a href="{{ .URL }}" class="menu-link {{ if $current.IsMenuCurrent "main" . }}active{{end}}" alt="{{ .Name }}">
+                    {{ .Name }}
+                </a>
             </li>
             {{ end }}
         </ul>

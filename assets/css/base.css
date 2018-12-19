@@ -1,10 +1,9 @@
 :root {
     /* Font Sizes */
-    --title: 3.157rem;
-    --subtitle: 2.369rem;
-    --header: 1.777rem;
-    --subheader: 1.333rem;
-    --text: 1.3rem;
+    --title: 3.998rem;
+    --subtitle: 2.827rem;
+    --header: 1.999rem;
+    --subheader: 1.414rem;
 
     /* Colors */
     /* FIXME: Add white */
@@ -12,7 +11,7 @@
     --primary-dark: #ffa000;
     --primary-light: #ffecb3;
     --primary-text: #212121;
-    --secondary-text: #757575;
+    --secondary-text: #333333;
     --accent: #536dfe;
     --divider: #bdbdbd;
 }

@@ -1,0 +1,25 @@
+{
+  "name": "terrassa-hugo-theme",
+  "version": "1.0.0",
+  "description": "A simple theme for Hugo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielkvist/hugo-terrassa-theme.git"
+  },
+  "author": "Daniel \"Danielkvist\" <d94.zaragoza@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielkvist/hugo-terrassa-theme/issues"
+  },
+  "homepage": "https://github.com/danielkvist/hugo-terrassa-theme#readme",
+  "dependencies": {
+    "autoprefixer": "^9.4.3",
+    "cssnano": "^4.1.7",
+    "postcss": "^7.0.7",
+    "postcss-encode-background-svgs": "^1.0.3"
+  }
+}

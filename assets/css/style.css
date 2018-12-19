@@ -1,3 +1,11 @@
+body {
+    color: var(--primary-text);
+}
+
+i {
+    font-size: var(--subheader);
+}
+
 /* HEADER */
 .header {
     background-color: white;
@@ -9,6 +17,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 999;
 }
 
 .header-title {
@@ -20,7 +29,6 @@
 
 .title-link {
     color: var(--primary-dark);
-    font-size: 1.1rem;
     text-decoration: none;
 }
 
@@ -65,18 +73,20 @@
     width: 100%;
 }
 
-/* BANNER */
-.banner {
+/* HERO */
+.hero {
     align-content: center;
+    background-attachment: fixed;
+    background-position: 100% 20%;
+    background-repeat: no-repeat;
+    background-size: contain;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
     height: 90vh;
-    justify-content: center;
+    justify-content: start;
     overflow: hidden;
 }
 
-.banner-content {
+.hero-caption {
     align-items: flex-start;
     animation: focus 0.95s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     display: flex;
@@ -85,32 +95,20 @@
     margin-left: 4.5rem;
 }
 
-.banner-content>h1 {
+.hero-caption > h1 {
     font-size: var(--title);
-    font-weight: 300;
 }
 
-.banner-content>h2 {
-    font-size: var(--subtitle);
-}
-
-.banner-content>p {
+.hero-caption > h2 {
     font-size: var(--subheader);
-    margin-top: 0.5rem;
-}
-
-.banner-img {
-    height: auto;
-    width: 120%;
 }
 
 .cta-btn {
     background-color: var(--primary-dark);
     color: white;
-    font-weight: 400;
-    margin-top: 3.5rem;
+    margin-top: 4.5rem;
     overflow: hidden;
-    padding: 15px 75px;
+    padding: 1.1rem 4.7rem;
     position: relative;
     text-decoration: none;
     transform: translate3d(0, 0, 0);
@@ -122,26 +120,43 @@
 }
 
 .cta-btn::after {
- background-image: radial-gradient(circle, var(--primary-light) 10%, transparent 10.01%);
- background-position: 50%;
- background-repeat: no-repeat;
- content: "";
- display: block;
- height: 100%;
- left: 0;
- opacity: 0;
- position: absolute;
- pointer-events: none;
- top: 0;
- transform: scale(10, 10);
- transition: transform .5s, opacity 1s;
- width: 100%;
+    background-image: radial-gradient(circle, var(--primary-light) 10%, transparent 10.01%);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    transform: scale(10, 10);
+    transition: transform .5s, opacity 1s;
+    width: 100%;
 }
 
 .cta-btn:active::after {
- opacity: 0.7;
- transform: scale(0, 0);
- transition: 0s;
+    opacity: 0.7;
+    transform: scale(0, 0);
+    transition: 0s;
+}
+
+/* CONTENT */
+.content {
+    height: 100vh;
+    margin-top: 2.75rem;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+.content > h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.content > h2 {
+    margin-bottom: 0.75rem;
 }
 
 /* FOOTER */
@@ -150,13 +165,14 @@
     border-top: 1px solid var(--divider);
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: ". social social ." "contact contact contact copy"
+    grid-template-areas: "social social social social" "contact contact contact copy"
 }
 
 .footer-social {
+    padding: 1rem 25rem; 
     align-items: center;
-    border-bottom: 1px solid var(--divider);
     display: flex;
+    border-bottom: 1px solid var(--divider);
     grid-area: social;
     justify-content: space-evenly;
 }
@@ -165,7 +181,7 @@
     background-color: var(--primary-text);
     border-radius: 50%;
     color: white;
-    font-size: var(--text);
+    font-size: var(--subheader);
     height: 35px;
     line-height: 35px;
     position: relative;
@@ -177,7 +193,7 @@
 .social-link::after,
 .social-link::before {
     background: transparent;
-    border: 2.5px solid var(--primary-text);
+    border: 1.5px solid var(--primary-text);
     border-radius: 50%;
     bottom: 0;
     content: "";
@@ -190,15 +206,17 @@
 }
 
 .social-link:hover {
-    color: var(--primary-text);
+    color: var(--secondary-text);
     background-color: transparent;
 }
 
 .social-link:hover::after {
+    border-color: var(--secondary-text);
     transform: scale(1.5);
 }
 
 .social-link:hover::before {
+    color: var(--secondary-text);
     opacity: 0;
     transform: scale(2);
     transition: 0.3s all;
@@ -206,6 +224,7 @@
 
 .footer-contact,
 .footer-copy {
+    padding: 1rem 0;
     background-color: var(--primary-dark);
 }
 
@@ -228,7 +247,6 @@
 .contact-link,
 .address {
     color: white;
-    font-weight: 400;
 }
 
 .contact-link {
@@ -238,8 +256,7 @@
 .footer-copy {
     align-items: flex-end;
     display: flex;
-    font-size: 0.9rem;
-    font-weight: 400;
+    font-size: 0.95rem;
     grid-area: copy;
     justify-content: flex-end;
     padding-right: 3.5rem;

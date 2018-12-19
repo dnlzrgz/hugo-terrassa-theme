@@ -35,7 +35,12 @@ themesDir = "../.."
 
 [params]
 
+[params.hero] # Hero options
+    show = true
+    background = "undraw_freelancer_b0my.svg"
+
 [params.cta] # Call To Action 
+    show = true
     cta = "Contact"
     link = "example@gmail.com"
     type = "email"

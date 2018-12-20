@@ -1,0 +1,25 @@
+<header class="card__header">
+    <h1>
+        <a href="{{ .Permalink }}" class="card__title" alt="{{ .Title }}.">
+            {{ .Title }}
+        </a>
+    </h1>
+    <p class="card__date">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</p>
+</header>
+
+<main class="card__body">
+    {{ .Content | truncate 480 }}
+</main>
+
+{{ if .Params.Tags }}
+<footer>
+    <ul class="tags">
+        {{ range .Params.Tags }}
+        {{ $url := printf "%s/tags/%s/" $.Site.BaseURL .}}
+        <li class="tags__item">
+            <a href="{{ $url }}" class="tags__item__link" alt="{{ . }}.">#{{ . }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</footer>
+{{ end }}

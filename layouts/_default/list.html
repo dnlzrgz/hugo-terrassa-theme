@@ -1,0 +1,7 @@
+{{ define "main" }}
+{{ range .Pages }}
+<article class="card">
+    {{ .Render "card" }}
+</article>
+{{ end }}
+{{ end }}

@@ -9,23 +9,3 @@
         opacity: 1;
     }
 }
-
-/* FADE */
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* FLIP */
-@keyframes flip {
-    0% {
-        transform: rotateX(0);
-    }
-    100% {
-        transform: rotateX(-180deg);
-    }
-}

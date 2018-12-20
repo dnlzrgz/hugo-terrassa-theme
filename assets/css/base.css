@@ -15,3 +15,11 @@
     --accent: #536dfe;
     --divider: #bdbdbd;
 }
+
+body {
+    color: var(--primary-text);
+}
+
+i {
+    font-size: var(--subheader);
+}

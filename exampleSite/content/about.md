@@ -3,7 +3,7 @@ title: "About"
 draft: false
 menu: main
 name: "About"
-weight: 3
+weight: 2
 ---
 
 # About

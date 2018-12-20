@@ -1,17 +1,17 @@
 <header class="header">
     <!-- Title -->
-    <div class="header-title">
-        <a href="{{ .Site.BaseURL }}" class="title-link" alt="Home">{{ .Site.Title }}</a>
+    <div class="title">
+        <a href="{{ .Site.BaseURL }}" class="title__link" alt="Home">{{ .Site.Title }}</a>
     </div>
 
     <!-- Menu -->
-
-    <nav class="menu">
-        <ul class="menu-links">
+    <nav>
+        <ul class="menu">
             {{ $current := . }}
             {{ range .Site.Menus.main }}
-            <li>
-                <a href="{{ .URL }}" class="menu-link {{ if $current.IsMenuCurrent "main" . }}active{{end}}" alt="{{ .Name }}">
+            <li class="menu__item">
+                <a href="{{ .URL }}" class="menu__item__link {{ if $current.IsMenuCurrent "main" . }}active{{ end }}"
+                    alt="{{ .Name }}">
                     {{ .Name }}
                 </a>
             </li>

@@ -1,38 +1,38 @@
 <footer class="footer">
-    <div class="footer-social">
+    <div class="social">
         {{ range $k, $v := .Site.Params.social }}
         {{ if $v}}
-        <a href="{{ $v }}" class="social-link" alt="{{ $k }}" target="_blank"><span><i class="fab fa-{{ $k }}"></i></span>
+        <a href="{{ $v }}" class="social__link" alt="{{ $k }}" target="_blank"><span><i class="fab fa-{{ $k }}"></i></span>
         </a>
         {{ end }}
         {{ end }}
     </div>
 
-    <div class="footer-contact">
+    <div class="contact">
         {{ if .Site.Params.contact.email }}
-        <p class="contact-item"><span><i class="far fa-envelope"></i></span>
-            <a href="mailto:{{ .Site.Params.contact.email}}" class="contact-link" alt="Email">
+        <p class="contact__item"><span><i class="far fa-envelope"></i></span>
+            <a href="mailto:{{ .Site.Params.contact.email}}" class="contact__link" alt="Email">
                 {{ .Site.Params.contact.email }}
             </a>
         </p>
         {{ end }}
 
         {{ if .Site.Params.contact.phone }}
-        <p class="contact-item"><span><i class="fas fa-phone"></i></span>
-            <a href="tel:{{ .Site.Params.contact.phone }}" class="contact-link" alt="Phone">
+        <p class="contact__item"><span><i class="fas fa-phone"></i></span>
+            <a href="tel:{{ .Site.Params.contact.phone }}" class="contact__link" alt="Phone">
                 {{ .Site.Params.contact.phone}}
             </a>
         </p>
         {{ end }}
 
         {{ if .Site.Params.contact.address }}
-        <p class="contact-item"><span><i class="fas fa-map-marker-alt"></i></span>
+        <p class="contact__item"><span><i class="fas fa-map-marker-alt"></i></span>
             <p class="address">{{ .Site.Params.contact.address }}</p>
         </p>
         {{ end }}
     </div>
 
-    <div class="footer-copy">
+    <div class="copy">
         <p>© {{ now.Format "2006" }} - {{.Site.Title}}</p>
     </div>
 

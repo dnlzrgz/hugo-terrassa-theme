@@ -1,11 +1,3 @@
-body {
-    color: var(--primary-text);
-}
-
-i {
-    font-size: var(--subheader);
-}
-
 /* HEADER */
 .header {
     background-color: white;
@@ -20,19 +12,20 @@ i {
     z-index: 999;
 }
 
-.header-title {
+.title {
     align-items: center;
     display: flex;
     justify-content: flex-start;
     margin-left: 3.5rem;
 }
 
-.title-link {
+.title__link {
     color: var(--primary-dark);
     text-decoration: none;
 }
 
-.menu-links {
+/* MENU */
+.menu {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -40,40 +33,38 @@ i {
     text-align: center;
 }
 
-.menu-links > li {
+.menu__item {
     margin: 0 1.5rem;
-    padding: 0;
 }
 
-.menu-link {
+.menu__item__link {
     color: var(--primary-text);
     padding: 0.5rem 0;
     position: relative;
-    transition: color 0.25s;
     text-decoration: none;
 }
 
-.menu-link::before {
+.menu__item__link::before {
     bottom: 0;
     content: "";
     display: block;
     height: 3px;
     position: absolute;
-    transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in-out;
     width: 0%;
 }
 
-.menu-link::before {
+.menu__item__link::before {
     background-color: var(--primary);
 }
 
-.menu-link:hover::before,
-.menu-link:focus::before {
+.menu__item__link:hover::before,
+.menu__item__link:focus::before {
     opacity: 1;
     width: 100%;
 }
 
-.menu-link.active::before {
+.menu__item__link.active::before {
     opacity: 1;
     width: 100%;
 }
@@ -85,13 +76,12 @@ i {
     background-position: 100% 20%;
     background-repeat: no-repeat;
     background-size: contain;
-    display: grid;
+    display: flex;
     height: 90vh;
-    justify-content: start;
-    overflow: hidden;
+    justify-content: flex-start;
 }
 
-.hero-caption {
+.hero__caption {
     align-items: flex-start;
     animation: focus 0.95s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     display: flex;
@@ -100,31 +90,32 @@ i {
     margin-left: 4.5rem;
 }
 
-.hero-caption > h1 {
+.hero__caption > h1 {
     font-size: var(--title);
 }
 
-.hero-caption > h2 {
+.hero__caption > h2 {
     font-size: var(--subheader);
 }
 
-.cta-btn {
+/* CTA */
+.cta__btn {
     background-color: var(--primary-dark);
     color: white;
     margin-top: 4.5rem;
     overflow: hidden;
-    padding: 1.1rem 4.7rem;
+    padding: 1.15rem 4.5rem;
     position: relative;
     text-decoration: none;
     transform: translate3d(0, 0, 0);
     transition: all 0.25s;
 }
 
-.cta-btn:hover {
+.cta__btn:hover {
     background-color: var(--primary);
 }
 
-.cta-btn::after {
+.cta__btn::after {
     background-image: radial-gradient(circle, var(--primary-light) 10%, transparent 10.01%);
     background-position: 50%;
     background-repeat: no-repeat;
@@ -141,28 +132,10 @@ i {
     width: 100%;
 }
 
-.cta-btn:active::after {
+.cta__btn:active::after {
     opacity: 0.7;
     transform: scale(0, 0);
     transition: 0s;
-}
-
-/* CONTENT */
-.content-list {
-    min-width: 100vh;
-}
-
-.content-single {
-    margin-bottom: 2.75rem;
-    margin-left: 30%;
-    margin-top: 2.75rem;
-    margin-right: 30%;
-    min-width: 100vh;
-    text-justify: distribute;
-}
-
-.content-single > h2 {
-    margin-bottom: 1.35rem;
 }
 
 /* FOOTER */
@@ -174,31 +147,32 @@ i {
     grid-template-areas: "social social social social" "contact contact contact copy";
 }
 
-.footer-social {
+.social {
     align-items: center;
     background-color: white;
     border-bottom: 1px solid var(--divider);
     display: flex;
+    flex-wrap: wrap;
     grid-area: social;
-    padding: 1rem 25rem; 
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.social-link {
+.social__link {
     background-color: var(--primary-text);
     border-radius: 50%;
     color: white;
     font-size: var(--subheader);
     height: 35px;
     line-height: 35px;
+    margin-left: 2.75rem;
     position: relative;
     text-align: center;
     text-decoration: none;
     width: 35px;
 }
 
-.social-link::after,
-.social-link::before {
+.social__link::after,
+.social__link::before {
     background: transparent;
     border: 1.5px solid var(--primary-text);
     border-radius: 50%;
@@ -212,59 +186,110 @@ i {
     transition: 0.3s all;
 }
 
-.social-link:hover {
-    color: var(--secondary-text);
+.social__link:hover {
     background-color: transparent;
+    color: var(--secondary-text);
 }
 
-.social-link:hover::after {
+.social__link:hover::after {
     border-color: var(--secondary-text);
     transform: scale(1.5);
 }
 
-.social-link:hover::before {
+.social__link:hover::before {
     color: var(--secondary-text);
     opacity: 0;
     transform: scale(2);
     transition: 0.3s all;
 }
 
-.footer-contact,
-.footer-copy {
+.contact,
+.copy {
     padding: 1rem 0;
     background-color: var(--primary-dark);
 }
 
-.footer-contact {
+.contact {
     display: flex;
     grid-area: contact;
 }
 
-.contact-item {
+.contact__item {
     align-items: center;
     display: flex;
     margin-left: 3.5rem;
 }
 
-.contact-item > span {
+.contact__item > span {
     color: var(--primary-text);
-    margin-right: 0.5rem;
+    margin-right: 0.45rem;
 }
 
-.contact-link,
+.contact__link,
 .address {
     color: white;
 }
 
-.contact-link {
+.contact__link {
     text-decoration: none;
 }
 
-.footer-copy {
+.copy {
     align-items: flex-end;
     display: flex;
     font-size: 0.95rem;
     grid-area: copy;
     justify-content: flex-end;
     padding-right: 3.5rem;
+}
+
+/* CONTENT */
+.content {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    margin-top: 3.75rem;
+    min-height: 90vh;
+}
+
+/* CARD */
+.card {
+    margin-bottom: 2.75rem;
+    margin-left: 3.75rem;
+    max-width: 70%;
+}
+
+
+.card__title {
+    color: var(--primary-text);
+    text-decoration: none;
+}
+
+.card__title:hover {
+    color: var(--primary);
+}
+
+.card__date {
+    font-size: 0.95rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.tags {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.tags__item__link {
+    color: var(--primary-text);
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.tags__item__link:hover {
+    color: var(--primary);
 }

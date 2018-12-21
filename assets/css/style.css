@@ -44,6 +44,11 @@
     text-decoration: none;
 }
 
+.menu__item__link:hover,
+.menu__item__link:focus {
+    color: var(--primary-text);
+}
+
 .menu__item__link::before {
     bottom: 0;
     content: "";
@@ -250,7 +255,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     justify-items: center;
-    margin-top: 3.75rem;
+    margin-top: 4.5rem;
     min-height: 90vh;
 }
 
@@ -258,9 +263,8 @@
 .card {
     margin-bottom: 2.75rem;
     margin-left: 3.75rem;
-    max-width: 70%;
+    max-width: 50%;
 }
-
 
 .card__title {
     color: var(--primary-text);
@@ -278,10 +282,48 @@
     margin-bottom: 0.75rem;
 }
 
+/* POST */
+.post {
+    margin-top: 4.5rem;
+    min-height: 90vh;
+    text-justify: distribute;
+}
+
+.post__header {
+    display: grid;
+    grid-template-areas: "title" "subtitle" "date";
+    grid-template-rows: auto;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.post__title {
+    font-size: var(--header);
+}
+
+.post__subtitle {
+    margin-top: 0;
+}
+
+.post__body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+/* TAGS */
 .tags {
     display: flex;
     padding: 0;
     list-style: none;
+}
+
+.post__tags {
+    justify-content: center;
 }
 
 .tags__item__link {
@@ -291,5 +333,5 @@
 }
 
 .tags__item__link:hover {
-    color: var(--primary);
+    color: var(--primary-dark);
 }

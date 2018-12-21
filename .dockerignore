@@ -1,0 +1,16 @@
+.git
+.gitignore
+LICENSE
+package-lock.json
+package.json
+postcss.config.js
+README.md
+theme.toml
+
+/archetypes/
+/assets/
+/images/
+/layouts/
+/node_modules
+/static/
+

@@ -1,5 +1,34 @@
 {{ define "main" }}
-<div class="content-single">
-    {{ .Content }}
-</div>
+<article class="post">
+    <header class="post__header">
+        <h1 class="post__title">{{ .Title }}</h1>
+        {{ if .Description }}
+        <p class="post__subtitle">{{ .Description }}</p>
+        {{ end }}
+        {{ if ne .Type "page" }}
+        <p class="card__date post__date">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</p>
+        {{ end }}
+    </header>
+
+    <hr>
+
+    <main class="post__body">
+        {{ .Content }}
+    </main>
+
+    {{ if .Params.Tags }}
+    <hr>
+
+    <footer class="post__footer">
+        <ul class="tags post__tags">
+            {{ range .Params.Tags }}
+            {{ $url := printf "%s/tags/%s/" $.Site.BaseURL .}}
+            <li class="tags__item">
+                <a href="{{ $url }}" class="tags__item__link" alt="{{ . }}.">#{{ . }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </footer>
+    {{ end }}
+</article>
 {{ end }}

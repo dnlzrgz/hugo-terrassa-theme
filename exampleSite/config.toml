@@ -10,7 +10,7 @@ themesDir = "../.."
 
 [params]
 
-[params.hero] # Hero options
+[params.hero] # Hero
     show = true
     background = "undraw_freelancer_b0my.svg"
 
@@ -18,14 +18,34 @@ themesDir = "../.."
     show = true
     cta = "Contact"
     link = "example@gmail.com"
-    type = "email"
+    type = "email" # Leave blank for other types of links
+
+[params.form] # Contact form
+    action = "https://formspree.io/your@email.com"
+    method = "POST"
+    showInputName = true
+    inputNameName = "name"
+    inputNamePlaceholder = "Your name"
+    inputEmailName = "email"
+    inputEmailPlaceholder = "Your email"
+    showInputMsg = true
+    inputMsgName = "message"
+    inputMsgPlaceholder = "Your message"
+    inputSubmitValue = "Send"
+
+[params.posts]
+    showAuthor = false # TODO:
+    showDate = true
+    showTags = true
+    dateFormat = "Monday, Jan 2, 2006"
+    postsPerPage = 7 # TODO:
 
 [params.contact] # Contact info
     email = "example@gmail.com"
     phone = "xxx xxx xxx"
     address = "419 Creek St. Revere, MA 02151"
 
-[params.social] # Your social networks
+[params.social] # Social networks
     twitter = "https://twitter.com/john"
     facebook = "https://facebook.com/john"
     github = "https://github.com/john"

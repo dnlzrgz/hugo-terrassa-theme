@@ -4,13 +4,16 @@
             {{ .Title }}
         </a>
     </h1>
-    <p class="card__date">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</p>
+    {{ if $.Site.Params.posts.showDate }}
+    <p class="card__date">{{ dateFormat $.Site.Params.posts.dateFormat .Date }}</p>
+    {{ end }}
 </header>
 
 <main class="card__body">
     {{ .Content | truncate 480 }}
 </main>
 
+{{ if $.Site.Params.posts.showTags }}
 {{ if .Params.Tags }}
 <footer>
     <ul class="tags">
@@ -22,4 +25,5 @@
         {{ end }}
     </ul>
 </footer>
+{{ end }}
 {{ end }}

@@ -6,7 +6,9 @@
         <p class="post__subtitle">{{ .Description }}</p>
         {{ end }}
         {{ if ne .Type "page" }}
-        <p class="card__date post__date">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</p>
+        {{ if $.Site.Params.posts.showDate }}
+        <p class="card__date post__date">{{ dateFormat $.Site.Params.posts.dateFormat .Date }}</p>
+        {{ end }}
         {{ end }}
     </header>
 
@@ -16,6 +18,7 @@
         {{ .Content }}
     </main>
 
+    {{ if $.Site.Params.posts.showTags }}
     {{ if .Params.Tags }}
     <hr>
 
@@ -31,4 +34,5 @@
     </footer>
     {{ end }}
 </article>
+{{ end }}
 {{ end }}

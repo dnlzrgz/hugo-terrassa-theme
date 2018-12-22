@@ -1,0 +1,47 @@
+{{ define "main" }}
+<main class="contact">
+    <h1 class="contact__title">{{ .Title }}</h1>
+    <div class="contact__content">{{ .Content }}</div>
+
+    <section>
+        <form action="{{ $.Site.Params.form.action }}" method="{{ lower $.Site.Params.form.method }}" class="contact-form"
+            id="contact-form">
+            <!-- Formspree Redirection -->
+            <input type="hidden" name="_next" value="https://google.com">
+
+            <!-- Name -->
+            <div class="contact-field contact-field--name">
+                <label for="{{ $.Site.Params.form.inputNameName }}">{{ $.Site.Params.form.inputNameLabel }}</label>
+                <input type="text" name="{{ $.Site.Params.form.inputNameName }}" placeholder="{{ $.Site.Params.form.inputNamePlaceholder }}"
+                    class="contact-form__input contac-form__name">
+            </div>
+
+            <!-- Email -->
+            <div class="contact-field contac-fiel--email">
+                <label for="{{ $.Site.Params.form.inputEmailName }}">{{ $.Site.Params.form.inputEmailLabel }}</label>
+                <input type="email" name="{{ $.Site.Params.form.inputEmailName }}" placeholder="{{ $.Site.Params.form.inputEmailPlaceholder }}"
+                    class="contact-form__input contac-form__email">
+            </div>
+
+            <!-- Message -->
+            <div class="contact-field contact-field--msg">
+                <label for="{{ $.Site.Params.form.inputMsgName }}">{{ $.Site.Params.form.inputMsgLabel }}</label>
+                <textarea name="{{ $.Site.Params.form.inputMsgName }}" id="{{ $.Site.Params.form.inputMsgName }}" form="contact-form"
+                    maxlength="{{ $.Site.Params.form.inputMsgLength }}"></textarea>
+            </div>
+
+            <!-- Submit -->
+            <div class="contact-field contact-field--submit">
+                <button type="submit" class="submit" onclick="cleanForm">{{ $.Site.Params.form.inputSubmitValue }}</button>
+            </div>
+
+        </form>
+    </section>
+</main>
+
+<script>
+    function cleanForm() {
+        document.getElementById("contact-form").reset();
+    }
+</script>
+{{ end }}

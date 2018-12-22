@@ -23,14 +23,15 @@ themesDir = "../.."
 [params.form] # Contact form
     action = "https://formspree.io/your@email.com"
     method = "POST"
-    showInputName = true
     inputNameName = "name"
+    inputNameLabel = "Name"
     inputNamePlaceholder = "Your name"
     inputEmailName = "email"
+    inputEmailLabel = "Email"
     inputEmailPlaceholder = "Your email"
-    showInputMsg = true
+    inputMsgLabel = "Write something"
     inputMsgName = "message"
-    inputMsgPlaceholder = "Your message"
+    inputMsgLength = 750
     inputSubmitValue = "Send"
 
 [params.posts]

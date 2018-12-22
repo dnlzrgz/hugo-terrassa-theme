@@ -12,6 +12,7 @@ themesDir = "../.."
 
 [params.hero] # Hero
     show = true
+    backgroundSize = "contain" # Background size is a CSS property
     background = "undraw_freelancer_b0my.svg"
 
 [params.cta] # Call To Action 

@@ -2,7 +2,7 @@
 {{ $base := resources.Get "css/base.css" }}
 {{ $style := resources.Get "css/style.css" }}
 {{ $animations := resources.Get "css/animations.css" }}
-{{ $bundle := slice $reset $base $style $animations | resources.Concat "css/bundle.css"}}
+{{ $bundle := slice $reset $base $style $animations | resources.Concat "css/bundle.css" }}
 {{ $css := $bundle | resources.PostCSS | resources.Fingerprint "sha512" }}
 
 <link rel="stylesheet" href="{{ $css.Permalink }}">

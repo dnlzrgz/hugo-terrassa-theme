@@ -14,7 +14,7 @@ html {
 }
 
 a {
-    background-color: transparent;
+    text-decoration: none;
 }
 
 body {
@@ -64,7 +64,7 @@ p {
 pre,
 code,
 kbd {
-    font-family: monospace, monospace;
+    font-family: monospace;
     font-size: 1em;
 }
 

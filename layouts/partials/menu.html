@@ -1,0 +1,12 @@
+<nav>
+    <ul class="menu">
+        {{ $current := . }}
+        {{ range .Site.Menus.main }}
+        <li class="menu__item">
+            <a href="{{ .URL }}" class="menu__item__link {{ if $current.IsMenuCurrent "main" . }}active{{ end }}" alt="{{ .Name }}">
+                {{ .Name }}
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+</nav>

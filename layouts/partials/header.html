@@ -1,21 +1,7 @@
 <header class="header">
-    <!-- Title -->
-    <div class="title">
-        <a href="{{ .Site.BaseURL }}" class="title__link" alt="Home">{{ .Site.Title }}</a>
+    <div class="header__title">
+        <a href="{{ .Site.BaseURL }}" class="header__title__link" alt="Home">{{ .Site.Title }}</a>
     </div>
 
-    <!-- Menu -->
-    <nav>
-        <ul class="menu">
-            {{ $current := . }}
-            {{ range .Site.Menus.main }}
-            <li class="menu__item">
-                <a href="{{ .URL }}" class="menu__item__link {{ if $current.IsMenuCurrent "main" . }}active{{ end }}"
-                    alt="{{ .Name }}">
-                    {{ .Name }}
-                </a>
-            </li>
-            {{ end }}
-        </ul>
-    </nav>
+    {{ partial "menu.html" . }}
 </header>

@@ -52,3 +52,17 @@ img {
     height: auto;
     width: 100%;
 }
+
+input,
+textarea {
+    border: 2px solid var(--divider);
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid var(--accent);
+}
+
+textarea {
+    resize: none;
+}

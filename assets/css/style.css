@@ -75,10 +75,11 @@
     background-attachment: fixed;
     background-position: 100% 20%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     display: flex;
     height: 90vh;
     justify-content: flex-start;
+    width: 100%;
 }
 
 .hero__caption {
@@ -316,4 +317,109 @@
 
 .tags__item__link:hover {
     color: var(--primary-dark);
+}
+
+.contact {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 4.5rem;
+    min-height: 90vh;
+}
+
+.contact__content {
+    margin-bottom: 1.75rem;
+    margin-top: 0;
+    max-width: 60%;
+    text-align: center;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-areas: "name email" "msg msg" "submit submit";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+}
+
+.contact-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.75rem;
+}
+
+.contact-field > label {
+    margin-bottom: 0.45rem;
+}
+
+.contact-field > input {
+    height: 1.9rem;
+    padding: 1rem 0.75rem;
+    width: 20rem;
+}
+
+.contact-field > textarea {
+    height: 12rem;
+    padding: 0.75rem 0.75rem;
+    width: 100%;
+}
+
+.contact-field--name {
+    grid-area: name;
+    margin-right: 1rem;
+}
+
+.contact-field--email {
+    grid-area: email;
+}
+
+.contact-field--msg {
+    grid-area: msg;
+}
+
+.contact-field--submit {
+    align-content: center;
+    display: grid;
+    grid-area: submit;
+    justify-content: center;
+    margin-top: 1.75rem;
+}
+
+.submit {
+    background-color: var(--primary-dark);
+    border: none;
+    color: white;
+    padding: 1.15rem 4.5rem;
+    position: relative;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.25s;
+    overflow: hidden;
+}
+
+.submit:hover {
+    color: white;
+    background-color: var(--primary);
+}
+
+.submit::after {
+    background-image: radial-gradient(circle, var(--primary-light) 10%, transparent 10.01%);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    transform: scale(10, 10);
+    transition: transform .5s, opacity 1s;
+    width: 100%;
+}
+
+.submit:active::after {
+    opacity: 0.7;
+    transform: scale(0, 0);
+    transition: 0s;
 }

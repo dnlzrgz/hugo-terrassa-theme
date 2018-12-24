@@ -102,107 +102,6 @@
     margin-top: 4.5rem;
 }
 
-.footer {
-    background-color: var(--primary-dark);
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-areas: "social social social" "contact contact copy";
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-}
-
-.footer__social {
-    align-items: center;
-    background-color: white;
-    border-top: 1px solid var(--divider);
-    border-bottom: 1px solid var(--divider);
-    display: flex;
-    flex-wrap: wrap;
-    grid-area: social;
-    justify-content: center;
-    padding: 1rem 0;
-}
-
-.footer__social__link {
-    background-color: var(--primary-text);
-    border-radius: 50%;
-    color: white;
-    font-size: var(--subheader);
-    height: 35px;
-    line-height: 35px;
-    margin-left: 2.75rem;
-    position: relative;
-    text-align: center;
-    width: 35px;
-}
-
-.footer__social__link::after,
-.social__link::before {
-    background: transparent;
-    border: 1.5px solid var(--primary-text);
-    border-radius: 50%;
-    bottom: 0;
-    content: "";
-    display: block;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: 0.3s all;
-}
-
-.footer__social__link:hover {
-    background-color: transparent;
-    color: var(--secondary-text);
-}
-
-.footer__social__link:hover::after {
-    border-color: var(--secondary-text);
-    transform: scale(1.5);
-}
-
-.footer__social__link:hover::before {
-    color: var(--secondary-text);
-    opacity: 0;
-    transform: scale(2);
-    transition: 0.3s all;
-}
-
-.footer__contact {
-    border: none;
-    display: flex;
-    grid-area: contact;
-    justify-content: space-evenly;
-}
-
-.footer__contact__item {
-    align-items: center;
-    color: white;
-    display: flex;
-    margin-left: 3.5rem;
-}
-
-.footer__contact__item > span {
-    color: var(--primary-text);
-    margin-right: 0.45rem;
-}
-
-.footer__contact__link {
-    color: white;
-}
-
-.footer__contact__link:hover {
-    color: white;
-}
-
-.copy {
-    align-items: flex-end;
-    display: flex;
-    font-size: 0.95rem;
-    grid-area: copy;
-    justify-content: center;
-}
-
 .content {
     display: grid;
     grid-auto-flow: row;
@@ -353,6 +252,107 @@
 
 .submit {
     font-size: 1rem;
+}
+
+.footer {
+    background-color: var(--primary-dark);
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-areas: "social social social" "contact contact copy";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+
+.footer__social {
+    align-items: center;
+    background-color: white;
+    border-top: 1px solid var(--divider);
+    border-bottom: 1px solid var(--divider);
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: social;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.footer__social__link {
+    background-color: var(--primary-text);
+    border-radius: 50%;
+    color: white;
+    font-size: var(--subheader);
+    height: 35px;
+    line-height: 35px;
+    margin-left: 2.75rem;
+    position: relative;
+    text-align: center;
+    width: 35px;
+}
+
+.footer__social__link::after,
+.social__link::before {
+    background: transparent;
+    border: 1.5px solid var(--primary-text);
+    border-radius: 50%;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.3s all;
+}
+
+.footer__social__link:hover {
+    background-color: transparent;
+    color: var(--secondary-text);
+}
+
+.footer__social__link:hover::after {
+    border-color: var(--secondary-text);
+    transform: scale(1.5);
+}
+
+.footer__social__link:hover::before {
+    color: var(--secondary-text);
+    opacity: 0;
+    transform: scale(2);
+    transition: 0.3s all;
+}
+
+.footer__contact {
+    border: none;
+    display: flex;
+    grid-area: contact;
+    justify-content: space-evenly;
+}
+
+.footer__contact__item {
+    align-items: center;
+    color: white;
+    display: flex;
+    margin-left: 3.5rem;
+}
+
+.footer__contact__item > span {
+    color: var(--primary-text);
+    margin-right: 0.45rem;
+}
+
+.footer__contact__link {
+    color: white;
+}
+
+.footer__contact__link:hover {
+    color: white;
+}
+
+.copy {
+    align-items: flex-end;
+    display: flex;
+    font-size: 0.95rem;
+    grid-area: copy;
+    justify-content: center;
 }
 
 .ripple-btn {

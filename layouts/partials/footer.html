@@ -8,9 +8,10 @@
         {{ end }}
     </div>
 
-    <div class="footer__contact">
+    <address class="footer__contact">
         {{ if .Site.Params.contact.email }}
-        <p class="footer__contact__item"><span><i class="far fa-envelope"></i></span>
+        <p class="footer__contact__item">
+            <span><i class="far fa-envelope"></i></span>
             <a href="mailto:{{ .Site.Params.contact.email}}" class="footer__contact__link" alt="Email">
                 {{ .Site.Params.contact.email }}
             </a>
@@ -18,7 +19,8 @@
         {{ end }}
 
         {{ if .Site.Params.contact.phone }}
-        <p class="footer__contact__item"><span><i class="fas fa-phone"></i></span>
+        <p class="footer__contact__item">
+            <span><i class="fas fa-phone"></i></span>
             <a href="tel:{{ .Site.Params.contact.phone }}" class="footer__contact__link" alt="Phone">
                 {{ .Site.Params.contact.phone}}
             </a>
@@ -26,11 +28,12 @@
         {{ end }}
 
         {{ if .Site.Params.contact.address }}
-        <p class="footer__contact__item"><span><i class="fas fa-map-marker-alt"></i></span>
-            <p class="address">{{ .Site.Params.contact.address }}</p>
+        <p class="footer__contact__item">
+            <span><i class="fas fa-map-marker-alt"></i></span>
+            {{ .Site.Params.contact.address }}
         </p>
         {{ end }}
-    </div>
+    </address>
 
     <div class="copy">
         <p>© {{ now.Format "2006" }} - {{.Site.Title}}</p>

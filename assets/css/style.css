@@ -99,60 +99,28 @@
 }
 
 .cta__btn {
-    background-color: var(--primary-dark);
-    color: white;
     margin-top: 4.5rem;
-    overflow: hidden;
-    padding: 1.15rem 4.5rem;
-    position: relative;
-    transform: translate3d(0, 0, 0);
-    transition: all 0.25s;
-}
-
-.cta__btn:hover {
-    color: white;
-    background-color: var(--primary);
-}
-
-.cta__btn::after {
-    background-image: radial-gradient(circle, var(--primary-light) 10%, transparent 10.01%);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    content: "";
-    display: block;
-    height: 100%;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    pointer-events: none;
-    top: 0;
-    transform: scale(10, 10);
-    transition: transform .5s, opacity 1s;
-    width: 100%;
-}
-
-.cta__btn:active::after {
-    opacity: 0.7;
-    transform: scale(0, 0);
-    transition: 0s;
 }
 
 .footer {
-    border-top: 1px solid var(--divider);
+    background-color: var(--primary-dark);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "social social social social" "contact contact contact copy";
+    grid-auto-flow: row;
+    grid-template-areas: "social social social" "contact contact copy";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
 }
 
 .footer__social {
     align-items: center;
     background-color: white;
+    border-top: 1px solid var(--divider);
     border-bottom: 1px solid var(--divider);
     display: flex;
     flex-wrap: wrap;
     grid-area: social;
     justify-content: center;
+    padding: 1rem 0;
 }
 
 .footer__social__link {
@@ -200,19 +168,16 @@
     transition: 0.3s all;
 }
 
-.footer__contact,
-.copy {
-    padding: 1rem 0;
-    background-color: var(--primary-dark);
-}
-
 .footer__contact {
+    border: none;
     display: flex;
     grid-area: contact;
+    justify-content: space-evenly;
 }
 
 .footer__contact__item {
     align-items: center;
+    color: white;
     display: flex;
     margin-left: 3.5rem;
 }
@@ -222,8 +187,11 @@
     margin-right: 0.45rem;
 }
 
-.footer__contact__link,
-.address {
+.footer__contact__link {
+    color: white;
+}
+
+.footer__contact__link:hover {
     color: white;
 }
 
@@ -232,8 +200,7 @@
     display: flex;
     font-size: 0.95rem;
     grid-area: copy;
-    justify-content: flex-end;
-    padding-right: 3.5rem;
+    justify-content: center;
 }
 
 .content {
@@ -248,7 +215,6 @@
 
 .card {
     margin-bottom: 2.75rem;
-    margin-left: 3.75rem;
     max-width: 50%;
 }
 
@@ -374,6 +340,7 @@
 
 .contact-field--msg {
     grid-area: msg;
+    margin-top: 1.75rem;
 }
 
 .contact-field--submit {
@@ -385,22 +352,26 @@
 }
 
 .submit {
+    font-size: 1rem;
+}
+
+.ripple-btn {
     background-color: var(--primary-dark);
     border: none;
     color: white;
+    overflow: hidden;
     padding: 1.15rem 4.5rem;
     position: relative;
     transform: translate3d(0, 0, 0);
     transition: all 0.25s;
-    overflow: hidden;
 }
 
-.submit:hover {
+.ripple-btn:hover {
     color: white;
     background-color: var(--primary);
 }
 
-.submit::after {
+.ripple-btn::after {
     background-image: radial-gradient(circle, var(--primary-light) 10%, transparent 10.01%);
     background-position: 50%;
     background-repeat: no-repeat;
@@ -417,7 +388,7 @@
     width: 100%;
 }
 
-.submit:active::after {
+.ripple-btn:active::after {
     opacity: 0.7;
     transform: scale(0, 0);
     transition: 0s;

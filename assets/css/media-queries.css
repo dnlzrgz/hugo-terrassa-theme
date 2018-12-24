@@ -40,6 +40,27 @@
         max-width: 75%;
     }
 
+    .contact-form {
+        grid-template-areas: "name" "email" "msg" "submit";
+    }
+
+    .contact-field > input {
+        width: 25rem;
+    }
+
+    .contact-field--name {
+        margin-right: 0;
+    }
+
+    .contact-field--msg {
+        margin-top: 0;
+    }
+
+    .contact-field--submit {
+        margin-top: 1.75rem;
+        margin-bottom: 3.75rem;
+    }
+
     .post__header {
         padding-left: 10%;
         padding-right: 10%;
@@ -57,6 +78,10 @@
         margin-right: 1.75rem;
     }
 
+    .contact-field > input {
+        width: 20rem;
+    }
+
     .card {
         max-width: 90%;
     }
@@ -70,5 +95,11 @@
         height: 40px;
         line-height: 40px;
         width: 40px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .contact-field > input {
+        width: 17rem;
     }
 }

@@ -1,0 +1,18 @@
+<nav class="hamburger-menu">
+    <div class="toggle">
+        <input type="checkbox" class="hamburger__toggle" id="hamburger__toggle">
+        <label class="hamburger__toggle__icon" for="hamburger__toggle">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <ul class="hamburger__items">
+            {{ range .Site.Menus.main }}
+            <li class="hamburger__items__item">
+                <a href="{{ .URL }}" class="hamburger__items__item__link" alt="{{ .Name }}">
+                    {{ .Name }}
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</nav>

@@ -36,6 +36,18 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: inline;
+    }
+
+    .hero {
+        background-size: cover;
+    }
+
     .card {
         max-width: 75%;
     }
@@ -73,6 +85,14 @@
 }
 
 @media only screen and (max-width: 576px) {
+    .header__title {
+        margin-left: 1.5rem;
+    }
+
+    .toggle {
+        right: 1.5rem;
+    }
+
     .hero__caption {
         margin-left: 1.75rem;
         margin-right: 1.75rem;

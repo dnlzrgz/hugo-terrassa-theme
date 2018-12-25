@@ -22,7 +22,7 @@
     color: var(--primary-dark);
 }
 
-.menu {
+.menu__items {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -30,22 +30,22 @@
     text-align: center;
 }
 
-.menu__item {
+.menu__items__item {
     margin: 0 1.5rem;
 }
 
-.menu__item__link {
+.menu__items__item__link {
     color: var(--primary-text);
     padding: 0.5rem 0;
     position: relative;
 }
 
-.menu__item__link:hover,
-.menu__item__link:focus {
+.menu__items__item__link:hover,
+.menu__items__item__link:focus {
     color: var(--primary-text);
 }
 
-.menu__item__link::before {
+.menu__items__item__link::before {
     bottom: 0;
     content: "";
     display: block;
@@ -55,19 +55,73 @@
     width: 0%;
 }
 
-.menu__item__link::before {
+.menu__items__item__link::before {
     background-color: var(--primary);
 }
 
-.menu__item__link:hover::before,
-.menu__item__link:focus::before {
+.menu__items__item__link:hover::before,
+.menu__items__item__link:focus::before {
     opacity: 1;
     width: 100%;
 }
 
-.menu__item__link.active::before {
+.menu__items__item__link.active::before {
     opacity: 1;
     width: 100%;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.toggle {
+    align-self: center;
+    position: absolute;
+    right: 4.5rem;
+    user-select: none;
+}
+
+.hamburger__toggle {
+    display: block;
+    height: 32px;
+    left: -5px;
+    opacity: 0;
+    position: absolute;
+    top: -7px;
+    width: 40px;
+    z-index: 9999;
+}
+
+.hamburger__items {
+    background-color: white;
+    box-shadow: -1px 2px 5px var(--divider);
+    height: 100vh;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    transform: translate(100%, 0);
+    transform-origin: 0% 0%;
+    transition: transform 0.75s ease-in-out;
+    transition: all 0.3s;
+    width: 50vw;
+}
+
+.hamburger__items__item {
+    margin-top: 1.75rem;
+    margin-left: 2.75rem;
+}
+
+
+.hamburger__items__item__link {
+    color: var(--primary-text);
+}
+
+.hamburger__items__item__link:hover {
+    color: var(--primary-dark);
+}
+
+.toggle .hamburger__toggle:checked ~ .hamburger__items {
+    transform: translate(-70%, 0);
 }
 
 .hero {
@@ -75,6 +129,7 @@
     background-attachment: fixed;
     background-position: 100% 20%;
     background-repeat: no-repeat;
+    background-size: contain;
     display: flex;
     height: 90vh;
     justify-content: flex-start;

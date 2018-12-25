@@ -4,9 +4,17 @@
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow, noarchive">
     <title>{{ .Page.Title }}</title>
+
     {{ .Hugo.Generator }}
+
     {{ if .Description }}
-    <meta name="description" content="{{ .Description }}">{{ end }}
+    <meta name="description" content="{{ .Description }}">
+    {{ end }}
+
+    {{ if .Site.GoogleAnalytics }}
+    {{ template "_internal/google_analytics.html" . }}
+    {{ end }}
+
     <!-- CSS -->
     {{ partial "styles.html" . }}
 </head>

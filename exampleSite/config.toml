@@ -1,7 +1,7 @@
 baseurl = "/"
 title = "Terrassa"
 author = "Daniel Zaragoza (Danielkvist)"
-
+googleAnalytics = ""
 defaultContentLanguage = "en"
 language = "en-US"
 

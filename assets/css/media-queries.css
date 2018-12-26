@@ -1,6 +1,7 @@
 @media only screen and (max-width: 1024px) {
     .hero {
-        background-position: 0;
+        background-position: 20% 0;
+        background-size: cover;
     }
 
     .card {
@@ -8,12 +9,24 @@
     }
 
     .post__body {
-        margin-left: 20%;
-        margin-right: 20%;
+        margin: 0 20%;
     }
 
     .footer__contact {
         flex-direction: column;
+        padding: 1.75rem;
+    }
+
+    .footer__contact__item {
+        padding-bottom: 1.75rem;
+    }
+
+    .footer__contact__item:last-of-type {
+        padding-bottom: 0;
+    }
+
+    .copy {
+        align-items: flex-end;
     }
 }
 
@@ -30,8 +43,8 @@
         max-width: 70%;
     }
 
-    .footer__social__link {
-        margin: 20px 20px;
+    .footer__social {
+        padding: 1rem 0;
     }
 }
 
@@ -41,11 +54,7 @@
     }
 
     .hamburger-menu {
-        display: inline;
-    }
-
-    .hero {
-        background-size: cover;
+        display: block;
     }
 
     .card {
@@ -69,18 +78,15 @@
     }
 
     .contact-field--submit {
-        margin-top: 1.75rem;
-        margin-bottom: 3.75rem;
+        margin: 1.75rem 0;
     }
 
     .post__header {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding: 0 10%;
     }
 
     .post__body {
-        margin-left: 10%;
-        margin-right: 10%;
+        margin: 0 10%;
     }
 }
 
@@ -93,9 +99,12 @@
         right: 1.5rem;
     }
 
+    .hero {
+        background-position: 30% 0;
+    }
+
     .hero__caption {
-        margin-left: 1.75rem;
-        margin-right: 1.75rem;
+        margin-left: 0 1.75rem;
     }
 
     .contact-field > input {
@@ -114,7 +123,18 @@
     .footer__social__link {
         height: 40px;
         line-height: 40px;
+        margin: 0.75rem;
         width: 40px;
+    }
+
+    .footer__contact {
+        padding: 1.75rem;
+    }
+
+    .copy {
+        justify-content: center;
+        margin-bottom: 1.75rem;
+        padding: 0;
     }
 }
 

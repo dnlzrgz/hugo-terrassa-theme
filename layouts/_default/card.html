@@ -19,7 +19,7 @@
     <ul class="tags">
         {{ range .Params.Tags }}
         {{ $url := printf "%s/tags/%s/" $.Site.BaseURL .}}
-        <li class="tags__item">
+        <li class="tags-card">
             <a href="{{ $url }}" class="tags__item__link" alt="{{ . }}.">#{{ . }}</a>
         </li>
         {{ end }}

@@ -1,3 +1,71 @@
+html,
+body,
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6,
+a, 
+p, 
+span,
+em, 
+small, 
+strong,
+sub, 
+sup,
+mark, 
+del, 
+ins, 
+strike,
+abbr, 
+dfn,
+blockquote, 
+q, 
+cite,
+code, 
+pre,
+li, 
+dl, 
+dt, 
+dd,
+div, 
+section, 
+article,
+main, 
+aside, 
+nav,
+header, 
+hgroup, 
+footer,
+img, 
+figure, 
+figcaption,
+address, 
+time,
+audio, 
+video,
+canvas, 
+iframe,
+details, 
+summary,
+fieldset, 
+form, 
+label, 
+legend,
+table, 
+caption,
+tbody, 
+tfoot, 
+thead,
+tr, 
+th, 
+td {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
 html {
     box-sizing: border-box;
     font-size: 1em;
@@ -7,10 +75,6 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
-}
-
-*:focus {
-    outline: 0;
 }
 
 a {
@@ -25,8 +89,20 @@ body {
     font-weight: 400;
     height: 100vh;
     line-height: 1.45;
-    margin: 0;
     text-rendering: optimizeLegibility;
+    min-width: 100vw;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: "";
 }
 
 
@@ -39,26 +115,37 @@ h4 {
     margin: 1.414rem 0 0.5rem;
 }
 
-h1 {
-    margin-top: 0;
-}
-
 hr {
     box-sizing: content-box;
-    height: 0;
     overflow: visible;
+}
+
+img,
+video,
+figure {
+    max-width: 100%;
 }
 
 img {
     border-style: none;
 }
 
-main {
+main,
+header,
+footer {
     display: block;
 }
 
+ol,
+ul {
+    list-style: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+}
+
 p {
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.1rem;
 }
 
 pre,
@@ -70,4 +157,21 @@ kbd {
 
 select {
     text-transform: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+[hidden] {
+    display: none;
+}
+
+[disabled] {
+    cursor: not-allowed;
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
 }

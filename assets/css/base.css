@@ -41,11 +41,6 @@ figcaption {
     text-align: center;
 }
 
-figure {
-    height: auto;
-    width: 100%;
-}
-
 hr {
     color: var(--divider);
     opacity: 0.30;
@@ -58,7 +53,6 @@ i {
 
 img {
     height: auto;
-    width: 100%;
 }
 
 input,
@@ -69,6 +63,15 @@ textarea {
 input:focus,
 textarea:focus {
     border: 2px solid var(--accent);
+}
+
+pre {
+    border: 2px solid var(--divider);
+    overflow: auto;
+    margin-bottom: 1.75rem;
+    padding: 1rem 1.75rem;
+    text-align: left;
+    width: 100%;
 }
 
 textarea {

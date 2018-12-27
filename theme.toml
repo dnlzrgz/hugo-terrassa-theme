@@ -1,15 +1,18 @@
-# theme.toml template for a Hugo theme
-# See https://github.com/gohugoio/hugoThemes#themetoml for an example
-
 name = "Terrassa"
 license = "MIT"
 licenselink = "https://github.com/danielkvist/terrassa-hugo-theme/blob/master/LICENSE"
-description = ""
+description = "A simple, fast and responsive theme for Hugo with a strong focus on accessibility."
 homepage = "http://github.com/danielkvist/terrassa-hugo-theme"
-tags = []
-features = []
+tags = ["blog", "clean", "personal", "company", "google analytics", "contact form","mobile", "modern", "accessibility", "font awesome"]
+features = [
+  "responsive design",
+  "accessibility",
+  "social icons",
+  "contact form",
+  "blog",
+]
 min_version = "0.41"
 
 [author]
   name = "Danielkvist (Daniel Zaragoza)"
-  homepage = "https://github.com/danielkvist"
+  homepage = "https://danielkvist.github.io"

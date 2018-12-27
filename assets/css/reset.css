@@ -90,7 +90,6 @@ body {
     height: 100vh;
     line-height: 1.45;
     text-rendering: optimizeLegibility;
-    min-width: 100vw;
 }
 
 blockquote,

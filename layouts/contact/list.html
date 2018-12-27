@@ -15,26 +15,29 @@
             <div class="contact-field contact-field--name">
                 <label for="{{ $.Site.Params.form.inputNameName }}">{{ $.Site.Params.form.inputNameLabel }}</label>
                 <input type="text" name="{{ $.Site.Params.form.inputNameName }}" placeholder="{{ $.Site.Params.form.inputNamePlaceholder }}"
-                    class="contact-form__input contac-form__name" required>
+                    class="contact-form__input contac-form__name" id="{{ $.Site.Params.form.inputNameName }}"
+                    aria-labelledby="{{ $.Site.Params.form.inputNameName }}" required>
             </div>
 
             <!-- Email -->
             <div class="contact-field contac-fiel--email">
                 <label for="{{ $.Site.Params.form.inputEmailName }}">{{ $.Site.Params.form.inputEmailLabel }}</label>
                 <input type="email" name="{{ $.Site.Params.form.inputEmailName }}" placeholder="{{ $.Site.Params.form.inputEmailPlaceholder }}"
-                    class="contact-form__input contac-form__email" required>
+                    class="contact-form__input contac-form__email" id="{{ $.Site.Params.form.inputEmailName }}"
+                    aria-labelledby="{{ $.Site.Params.form.InputEmailName }}" required>
             </div>
 
             <!-- Message -->
             <div class="contact-field contact-field--msg">
                 <label for="{{ $.Site.Params.form.inputMsgName }}">{{ $.Site.Params.form.inputMsgLabel }}</label>
                 <textarea name="{{ $.Site.Params.form.inputMsgName }}" id="{{ $.Site.Params.form.inputMsgName }}" form="contact-form"
-                    maxlength="{{ $.Site.Params.form.inputMsgLength }}" required></textarea>
+                    maxlength="{{ $.Site.Params.form.inputMsgLength }}" id="{{ $.Site.Params.form.inputMsgName }}"
+                    arial-labelledby="{{ $.Site.Params.form.InputMsgName }}" required></textarea>
             </div>
 
             <!-- Submit -->
             <div class="contact-field contact-field--submit">
-                <button type="submit" class="ripple-btn submit" onclick="cleanForm">
+                <button type="submit" class="ripple-btn submit" onclick="cleanForm" aria-label="{{ $.Site.Params.form.inputSubmitValue }}">
                     {{ $.Site.Params.form.inputSubmitValue }}
                 </button>
             </div>

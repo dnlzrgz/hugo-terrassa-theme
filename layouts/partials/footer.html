@@ -2,7 +2,10 @@
     <div class="footer__social">
         {{ range $k, $v := .Site.Params.social }}
         {{ if $v}}
-        <a href="{{ $v }}" class="footer__social__link" alt="{{ $k }}" target="_blank"><span><i class="fab fa-{{ $k }}"></i></span>
+        <a href="{{ $v }}" class="footer__social__link" alt="{{ $k }}" target="_blank" aria-label="{{ $v }}">
+            <span>
+                <i class="fab fa-{{ $k }}"></i>
+            </span>
         </a>
         {{ end }}
         {{ end }}

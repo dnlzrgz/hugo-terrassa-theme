@@ -117,7 +117,7 @@ $ hugo new posts/bad-example.md
 
 Inside this file (and anyone using Terrassa's default archetype) you'll find something like this:
 
-```toml
+```markdown
 ---
 title: "Bad example"
 date: 2018-12-27T21:09:45+01:00

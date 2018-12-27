@@ -1,7 +1,7 @@
 ---
 title: "Home"
 draft: false
-description: ""
+description: "Terrassa: the Hugo theme for you. Or for your company."
 menu: main
 weight: 1
 ---

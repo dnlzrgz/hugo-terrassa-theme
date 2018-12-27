@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main class="contact">
     <h1 class="contact__title">{{ .Title }}</h1>
-    <div class="contact__content">{{ .Content }}</div>
+    <p class="contact__content">{{ .Description }}</p>
 
     <section>
         <form action="{{ $.Site.Params.form.action }}" method="{{ lower $.Site.Params.form.method }}" class="contact-form"

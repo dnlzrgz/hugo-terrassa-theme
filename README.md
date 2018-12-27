@@ -148,7 +148,7 @@ The title and description will be used as the main title and subtitle respective
 
 ## Config
 
-For the configuration check the [config.toml](https://github.com/danielkvist/hugo-terrassa-theme/blob/master/config.toml) of the *exampleSite* and the [official documentation](https://gohugo.io/getting-started/configuration/) to see all the options.
+For the configuration check the [config.toml](https://github.com/danielkvist/hugo-terrassa-theme/blob/master/exampleSite/config.toml) of the *exampleSite* and the [official documentation](https://gohugo.io/getting-started/configuration/) to see all the options.
 
 ## Font Awesome
 

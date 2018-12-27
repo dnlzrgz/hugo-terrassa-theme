@@ -100,12 +100,12 @@
 .hamburger__items {
     background-color: white;
     box-shadow: -1px 2px 5px var(--divider);
+    display: none;
     height: 100vh;
     position: absolute;
     transform: translate(100%, 0);
     transform-origin: 0% 0%;
     transition: transform 0.75s ease-in-out;
-    transition: all 0.3s;
     width: 50vw;
 }
 
@@ -123,6 +123,7 @@
 }
 
 .toggle .hamburger__toggle:checked ~ .hamburger__items {
+    display: block;
     transform: translate(-70%, 0);
 }
 
@@ -367,17 +368,20 @@
     transition: 0.3s all;
 }
 
-.footer__social__link:hover {
+.footer__social__link:hover,
+.footer__social__link:focus {
     background-color: transparent;
     color: var(--secondary-text);
 }
 
-.footer__social__link:hover::after {
+.footer__social__link:hover::after,
+.footer__social__link:focus::after {
     border-color: var(--secondary-text);
     transform: scale(1.5);
 }
 
-.footer__social__link:hover::before {
+.footer__social__link:hover::before,
+.footer__social__link:focus::before {
     color: var(--secondary-text);
     opacity: 0;
     transform: scale(2);
@@ -430,7 +434,8 @@
     transition: all 0.25s;
 }
 
-.ripple-btn:hover {
+.ripple-btn:hover,
+.ripple-btn:focus {
     color: white;
     background-color: var(--primary);
 }

@@ -1,6 +1,6 @@
 {{ $bkg := printf "%simages/%s" $.Site.BaseURL $.Site.Params.hero.background }}
 
-<main class="hero" {{ if $.Site.Params.hero.show }} style="background-image: url('{{ $bkg }}');" {{ end }}>
+<main class="hero" {{ if $.Site.Params.hero.background }} style="background-image: url('{{ $bkg }}');" {{ end }}>
     <div class="hero__caption">
         {{ .Content }}
         {{ if .Site.Params.cta.show }}

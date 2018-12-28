@@ -9,10 +9,11 @@ theme = "terrassa"
 themesDir = "../.."
 
 [params]
+    description = "Terrassa is a simple, fast and responsive theme for Hugo with a strong focus on accessibility made from scratch."
+    favicon = "favicon.ico"
 
 [params.hero] # Hero
-    show = true
-    background = "undraw_freelancer_b0my.svg"
+    background = "undraw_freelancer_b0my.svg" # Leave empty for no background image
 
 [params.cta] # Call To Action 
     show = true

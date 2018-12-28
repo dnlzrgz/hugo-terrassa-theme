@@ -4,21 +4,17 @@
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow, noarchive">
     <title>{{ .Site.Title }} - {{ .Title }}</title>
+    <link rel="icon" href="{{ .Site.Params.favicon }}">
+    <meta name="description" content="{{ .Site.Params.description }}">
 
     {{ .Hugo.Generator }}
-
-    <!-- FIXME: -->
-    {{ if .Description }}
-    <meta name="description" content="{{ .Description }}">
-    {{ end }}
 
     {{ if .Site.GoogleAnalytics }}
     {{ template "_internal/google_analytics.html" . }}
     {{ end }}
 
-    {{ if .Site.Params.favicon.favicon }}
-    <link rel="icon" href="{{ .Site.Params.favicon.favicon }}">
-    {{ end }}
+    {{ template "_internal/twitter_cards.html" . }}
+    {{ template "_internal/opengraph.html" . }}
 
     <!-- CSS -->
     {{ partial "styles.html" . }}

@@ -12,9 +12,6 @@ themesDir = "../.."
     description = "Terrassa is a simple, fast and responsive theme for Hugo with a strong focus on accessibility made from scratch."
     favicon = "favicon.ico"
 
-[params.hero] # Hero
-    background = "undraw_freelancer_b0my.svg" # Leave empty for no background image
-
 [params.cta] # Call To Action 
     show = true
     cta = "Contact"

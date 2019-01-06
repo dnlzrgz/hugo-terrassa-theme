@@ -1,7 +1,8 @@
 ---
 title: "Home"
-draft: false
 description: "Terrassa: the Hugo theme for you. Or for your company."
+images: ["undraw_freelancer_b0my.svg"]
+draft: false
 menu: main
 weight: 1
 ---

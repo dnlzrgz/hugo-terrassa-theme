@@ -1,7 +1,8 @@
 ---
 title: "Blog"
+description: ""
+images: []
 draft: false
 menu: main
-name: "Blog"
 weight: 2
 ---

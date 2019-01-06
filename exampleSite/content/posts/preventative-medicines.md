@@ -1,10 +1,11 @@
 ---
 title: "Why preventative medicines are afraid of the truth"
+description: "Why vaccination schedules will change your life."
 date: 2018-12-07T22:30:56+01:00
 publishDate: 2018-12-19T22:21:42+01:00
 author: "John Doe"
+images: []
 draft: false
-description: "Why vaccination schedules will change your life."
 tags: ["medicine", "health"]
 ---
 

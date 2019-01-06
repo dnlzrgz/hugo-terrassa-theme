@@ -1,7 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-draft: true
 description: ""
+images: []
+draft: true
 menu: main
 weight: 0
 ---

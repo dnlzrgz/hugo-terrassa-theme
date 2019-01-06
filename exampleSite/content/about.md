@@ -1,7 +1,8 @@
 ---
 title: "About"
-draft: false
 description: ""
+images: []
+draft: false
 menu: main
 weight: 3
 ---

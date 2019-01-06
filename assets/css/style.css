@@ -100,12 +100,12 @@
 .hamburger__items {
     background-color: white;
     box-shadow: -1px 2px 5px var(--divider);
-    display: none;
     height: 100vh;
     position: absolute;
     transform: translate(100%, 0);
     transform-origin: 0% 0%;
-    transition: transform 0.75s ease-in-out;
+    transition: transform 0.75s ease-in;
+    visibility: hidden;
     width: 50vw;
 }
 
@@ -123,8 +123,8 @@
 }
 
 .toggle .hamburger__toggle:checked ~ .hamburger__items {
-    display: block;
     transform: translate(-70%, 0);
+    visibility: visible;
 }
 
 .hero {

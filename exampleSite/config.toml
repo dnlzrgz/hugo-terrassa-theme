@@ -15,8 +15,7 @@ themesDir = "../.."
 [params.cta] # Call To Action 
     show = true
     cta = "Contact"
-    link = "example@gmail.com"
-    type = "email" # Leave blank for other types of links
+    link = "/contact"
 
 [params.form] # Contact form
     action = "https://formspree.io/your@email.com"

@@ -22,7 +22,8 @@ And much more.
 This theme is still under development. And that means two things:
 
 1. It's under **active** development.
-2. There are still some little details to be improved. Nothing important, however.
+2. There are still some little details to be improved and some unsupported features (RSS mainly).
+
 
 ## PostCSS
 
@@ -37,6 +38,13 @@ To install Terrassa run the followings command inside your Hugo site:
 ```bash
 $ cd themes
 $ git clone https://github.com/danielkvist/hugo-terrassa-theme.git terrassa
+```
+
+Or
+
+```bash
+$ cd themes
+$ git submodule add https://github.com/danielkvist/hugo-terrassa-theme.git terrassa
 ```
 
 And now run:
@@ -85,8 +93,9 @@ You'll get something like this inside your content folder.
 ```markdown
 ---
 title: ""
-draft: true
 description: ""
+images: []
+draft: true
 menu: main
 weight: 0
 ---
@@ -120,11 +129,12 @@ Inside this file (and anyone using Terrassa's default archetype) you'll find som
 ```markdown
 ---
 title: "Bad example"
+description: ""
 date: 2018-12-27T21:09:45+01:00
 publishDate: 2018-12-27T21:09:45+01:00
 author: "John Doe"
+images: []
 draft: true
-description: ""
 tags: []
 ---
 ```
@@ -156,7 +166,7 @@ Terrassa uses the [Font Awesome](https://fontawesome.com/) icons through a CDN. 
 
 ## Docker
 
-You can, if you know, use Docker to test Terrassa locally.
+The Dockerfile is used for testing. 
 
 ## Make
 

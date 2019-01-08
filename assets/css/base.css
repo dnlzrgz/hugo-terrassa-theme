@@ -6,7 +6,6 @@
     --subheader: 1.414rem;
 
     /* Colors */
-    /* FIXME: Add white */
     --primary: #ffc107;
     --primary-dark: #ffa000;
     --primary-light: #ffecb3;
@@ -16,8 +15,6 @@
     --divider: #bdbdbd;
 
     /* Breackpoints */
-    /* Only for documentation */
-    /* CSS vars can't be used on Media Queries */
     --sm: 576px;
     --md: 768px;
     --lg: 992px;

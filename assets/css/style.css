@@ -1,3 +1,4 @@
+/* HEADER */
 .header {
     background-color: white;
     box-shadow: 0 1px 5px var(--divider);
@@ -22,6 +23,7 @@
     color: var(--primary-dark);
 }
 
+/* MENU */
 .menu {
     display: flex;
     align-items: center;
@@ -127,6 +129,7 @@
     visibility: visible;
 }
 
+/* HERO */
 .hero {
     align-content: center;
     background-attachment: fixed;
@@ -156,10 +159,12 @@
     font-size: var(--subheader);
 }
 
+/* CTA */
 .cta__btn {
     margin-top: 4.5rem;
 }
 
+/* CONTENT */
 .content {
     display: grid;
     grid-auto-flow: row;
@@ -169,29 +174,26 @@
     min-height: 90vh;
 }
 
+/* CARD */
 .card {
     margin-bottom: 2.75rem;
     max-width: 50%;
 }
 
-.card__title {
+.card__header__link {
     color: var(--primary-text);
 }
 
-.card__title:hover {
+.card__header__link:hover {
     color: var(--primary);
 }
 
-.card__date {
-    font-size: 0.95rem;
-    font-weight: 400;
-    margin: 0 0 0.75rem 0;
+.card__header__author {
+    margin-bottom: 0.75rem;
+    text-align: center;
 }
 
-.tags-card {
-    margin: 0 0.75rem 0 0;
-}
-
+/* POST */
 .post {
     min-height: 90vh;
     text-justify: distribute;
@@ -199,7 +201,7 @@
 
 .post__header {
     display: grid;
-    grid-template-areas: "title" "subtitle" "date";
+    grid-template-areas: "title" "date" "subtitle" "author";
     grid-template-rows: auto;
     justify-content: center;
     padding: 0 20%;
@@ -207,10 +209,22 @@
 
 .post__title {
     font-size: var(--header);
+    grid-area: title;
 }
 
 .post__subtitle {
-    margin-top: 0;
+    grid-area: subtitle;
+    text-align: center;
+}
+
+.post__author {
+    grid-area: author;
+    text-align: center;
+}
+
+.post__date {
+    grid-area: date;
+    margin-bottom: 1.75rem;
 }
 
 .post__body {
@@ -218,34 +232,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1.75rem 30%;
+    margin: 1.75rem 30% 0.75rem;
 }
 
 .post__body > figure {
     margin-bottom: 1.75rem;
 }
 
-.tags {
+.post__footer {
     display: flex;
-    padding: 0;
-}
-
-.post__tags {
     justify-content: center;
+    margin: 0 30% 0.75rem;
 }
 
-.tags__item {
-    margin: 0.75rem 0.75rem 0.75rem 0;
-}
-
-.tags__item__link {
-    color: var(--primary-text);
-}
-
-.tags__item__link:hover {
-    color: var(--primary-dark);
-}
-
+/* CONTACT */
 .contact {
     align-items: center;
     display: flex;
@@ -320,6 +320,7 @@
     font-size: 1rem;
 }
 
+/* FOOTER */
 .footer {
     background-color: var(--primary-dark);
     display: grid;
@@ -411,6 +412,7 @@
     color: white;
 }
 
+/* COPY */
 .copy {
     display: flex;
     font-size: 0.95rem;
@@ -423,6 +425,31 @@
     margin: 0;
 }
 
+/* AUTHOR */
+.author {
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+/* DATE */
+.date {
+    font-size: 0.95rem;
+    font-weight: 400;
+    margin: 0 0 0.75rem 0;
+}
+
+/* TAGS */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.tags__tag {
+    margin-right: 0.75rem;
+}
+
+/* RIPPLE */
 .ripple-btn {
     background-color: var(--primary-dark);
     border: none;

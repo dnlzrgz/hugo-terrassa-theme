@@ -21,10 +21,12 @@
         {{ .Content }}
     </main>
 
+    {{ if ne .Type "page" }}
     <hr>
 
     <footer class="post__footer">
         {{ .Render "tags" }}
     </footer>
+    {{ end }}
 </article>
 {{ end }}

@@ -1,29 +1,23 @@
-<header class="card__header">
-    <h1>
-        <a href="{{ .Permalink }}" class="card__title" alt="{{ .Title }}.">
-            {{ .Title }}
-        </a>
-    </h1>
-    {{ if $.Site.Params.posts.showDate }}
-    <p class="card__date">{{ dateFormat $.Site.Params.posts.dateFormat .Date }}</p>
-    {{ end }}
-</header>
-
-<main class="card__body">
-    {{ .Content | truncate 480 }}
-</main>
-
-{{ if $.Site.Params.posts.showTags }}
-{{ if .Params.Tags }}
-<footer>
-    <ul class="tags">
-        {{ range .Params.Tags }}
-        {{ $url := printf "%s/tags/%s/" $.Site.BaseURL .}}
-        <li class="tags-card">
-            <a href="{{ $url }}" class="tags__item__link" alt="{{ . }}.">#{{ . }}</a>
-        </li>
+<article class="card">
+    <header class="card__header">
+        <h1 class="card__header__title">
+            <a href="{{ .Permalink }}" class="card__header__link" alt="{{ .Title }}.">
+                {{ .Title }}
+            </a>
+        </h1>
+        {{ if $.Site.Params.posts.showDate }}
+        <p class="card__header__date date">{{ dateFormat $.Site.Params.posts.dateFormat .Date }}</p>
         {{ end }}
-    </ul>
-</footer>
-{{ end }}
-{{ end }}
+        {{ if $.Site.Params.posts.showAuthor }}
+        <p class="card__header__author author">By {{ $.Params.author }}</p>
+        {{ end }}
+    </header>
+
+    <main class="card__body">
+        {{ .Content | truncate 480 }}
+    </main>
+
+    <footer class="card__footer">
+        {{ .Render "tags" }}
+    </footer>
+</article>

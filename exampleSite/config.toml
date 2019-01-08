@@ -4,6 +4,7 @@ author = "Daniel Zaragoza (Danielkvist)"
 googleAnalytics = ""
 defaultContentLanguage = "en"
 language = "en-US"
+paginate = 1
 
 theme = "terrassa"
 themesDir = "../.."
@@ -26,17 +27,16 @@ themesDir = "../.."
     inputEmailName = "email"
     inputEmailLabel = "Email"
     inputEmailPlaceholder = "Your email"
-    inputMsgLabel = "Write something"
     inputMsgName = "message"
+    inputMsgLabel = "Write something"
     inputMsgLength = 750
     inputSubmitValue = "Send"
 
 [params.posts]
-    showAuthor = false # TODO:
+    showAuthor = true
     showDate = true
     showTags = true
     dateFormat = "Monday, Jan 2, 2006"
-    postsPerPage = 7 # TODO:
 
 [params.contact] # Contact info
     email = "example@gmail.com"
@@ -65,16 +65,16 @@ themesDir = "../.."
         disable = false
         respectDoNotTrack = true
         useSessionStorage = false
-     [privacy.instagram]
+    [privacy.instagram]
         disable = false
         simple = false
-     [privacy.twitter]
+    [privacy.twitter]
         disable = false
         enableDNT = true
         simple = false
-     [privacy.vimeo]
+    [privacy.vimeo]
         disable = false
         simple = false
-     [privacy.youtube]
+    [privacy.youtube]
         disable = false
         privacyEnhanced = true

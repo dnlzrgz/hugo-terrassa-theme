@@ -6,8 +6,11 @@
         <p class="post__subtitle">{{ .Description }}</p>
         {{ end }}
         {{ if ne .Type "page" }}
+        {{ if $.Site.Params.posts.showAuthor }}
+        <p class="post__author author">By {{ $.Params.author }}</p>
+        {{ end }}
         {{ if $.Site.Params.posts.showDate }}
-        <p class="card__date post__date">{{ dateFormat $.Site.Params.posts.dateFormat .Date }}</p>
+        <p class="post__date date">{{ dateFormat $.Site.Params.posts.dateFormat .Date }}</p>
         {{ end }}
         {{ end }}
     </header>
@@ -18,21 +21,10 @@
         {{ .Content }}
     </main>
 
-    {{ if $.Site.Params.posts.showTags }}
-    {{ if .Params.Tags }}
     <hr>
 
     <footer class="post__footer">
-        <ul class="tags post__tags">
-            {{ range .Params.Tags }}
-            {{ $url := printf "%s/tags/%s/" $.Site.BaseURL .}}
-            <li class="tags__item">
-                <a href="{{ $url }}" class="tags__item__link" alt="{{ . }}.">#{{ . }}</a>
-            </li>
-            {{ end }}
-        </ul>
+        {{ .Render "tags" }}
     </footer>
-    {{ end }}
 </article>
-{{ end }}
 {{ end }}

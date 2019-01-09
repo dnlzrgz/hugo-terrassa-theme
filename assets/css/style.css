@@ -157,6 +157,7 @@
 
 .hero__caption > h2 {
     font-size: var(--subheader);
+    margin-top: 0.45rem;
 }
 
 /* CTA */
@@ -190,7 +191,7 @@
 
 .card__header__author {
     margin-bottom: 0.75rem;
-    text-align: center;
+    text-align: left;
 }
 
 /* POST */
@@ -214,6 +215,7 @@
 
 .post__subtitle {
     grid-area: subtitle;
+    margin-top: 0.75rem;
     text-align: center;
 }
 

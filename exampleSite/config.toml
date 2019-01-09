@@ -36,7 +36,7 @@ themesDir = "../.."
     showAuthor = true
     showDate = true
     showTags = true
-    dateFormat = "Monday, Jan 2, 2006"
+    dateFormat = "Monday, Jan, 2006"
 
 [params.contact] # Contact info
     email = "example@gmail.com"

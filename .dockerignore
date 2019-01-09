@@ -1,9 +1,6 @@
 .git
 .gitignore
 LICENSE
-package-lock.json
-package.json
-postcss.config.js
 README.md
 theme.toml
 
@@ -11,6 +8,5 @@ theme.toml
 /assets/
 /images/
 /layouts/
-/node_modules
 /static/
 

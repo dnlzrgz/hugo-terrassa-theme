@@ -56,8 +56,3 @@ tags
 ### Visual Studio Code Patch ###
 # Ignore all local history of files
 .history
-
-### Node ###
-# Dependency directories
-node_modules/
-jspm_packages/

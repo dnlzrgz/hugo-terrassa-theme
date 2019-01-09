@@ -24,13 +24,6 @@ This theme is still under development. And that means two things:
 1. It's under **active** development.
 2. There are still some little details to be improved and some unsupported features (like RSS).
 
-
-## PostCSS
-
-> In the near future this will be completely optional.
-
-For CSS I have made the decision to use [PostCSS](https://postcss.org/) instead of [Hugo Pipes](https://gohugo.io/hugo-pipes/introduction/). So for now, to use this theme you need to have [NodeJS](https://nodejs.org) and [npm](https://npmjs.com) installed.
-
 ## Installation
 
 To install Terrassa run the followings command inside your Hugo site:
@@ -45,13 +38,6 @@ Or
 ```bash
 $ cd themes
 $ git submodule add https://github.com/danielkvist/hugo-terrassa-theme.git terrassa
-```
-
-And now run:
-
-```bash
-$ cd terrassa
-$ npm install
 ```
 
 Back to your Hugo site directory open the *config.toml* file and add the following line:

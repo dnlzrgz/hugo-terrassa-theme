@@ -88,7 +88,8 @@ body {
     -webkit-font-smoothin: antialised;
     font-weight: 400;
     height: 100vh;
-    line-height: 1.45;
+    hyphens: auto;
+    line-height: 1.55;
     text-rendering: optimizeLegibility;
 }
 

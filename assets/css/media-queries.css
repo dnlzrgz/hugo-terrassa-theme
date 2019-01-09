@@ -12,6 +12,10 @@
         margin: 0 20%;
     }
 
+    .pagination {
+        width: 40%;
+    }
+
     .footer__contact {
         flex-direction: column;
         padding: 1.75rem;
@@ -41,6 +45,10 @@
 
     .card {
         max-width: 70%;
+    }
+
+    .pagination {
+        width: 50%;
     }
 
     .footer__social {
@@ -87,6 +95,10 @@
 
     .post__body {
         margin: 0 10%;
+    }
+
+    .pagination {
+        width: 70%;
     }
 }
 

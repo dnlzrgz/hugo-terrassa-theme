@@ -489,3 +489,24 @@
     transform: scale(0, 0);
     transition: 0s;
 }
+
+/* PAGINATION */
+.pagination {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1.75rem;
+    width: 20%;
+}
+
+.page-item.disabled > .page-link {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.page-item.active > .page-link {
+    color: var(--primary-dark);
+}
+
+.page-link {
+    color: var(--primary-text);
+}

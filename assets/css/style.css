@@ -260,35 +260,32 @@
     text-align: center;
 }
 
-.contact > section {
-    margin-top: 1.75rem;
-}
-
-.contact-form {
+.contact__form {
     display: grid;
     grid-template-areas: "name email" "msg msg" "submit submit";
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
+    margin-top: 1.75rem;
 }
 
-.contact-field {
+.contact__field {
     display: flex;
     flex-direction: column;
     margin-bottom: 0.75rem;
 }
 
-.contact-field > label {
+.contact__field > label {
     margin-bottom: 0.45rem;
 }
 
-.contact-field > input {
+.contact__field > input {
     font-size: 1rem;
     height: 1.9rem;
     padding: 1rem 0.75rem;
     width: 20rem;
 }
 
-.contact-field > textarea {
+.contact__field > textarea {
     font-family: sans-serif;
     font-size: 1rem;
     height: 12rem;
@@ -296,21 +293,21 @@
     width: 100%;
 }
 
-.contact-field--name {
+.contact__field--name {
     grid-area: name;
     margin-right: 1rem;
 }
 
-.contact-field--email {
+.contact__field--email {
     grid-area: email;
 }
 
-.contact-field--msg {
+.contact__field--msg {
     grid-area: msg;
     margin-top: 1.75rem;
 }
 
-.contact-field--submit {
+.contact__field--submit {
     align-content: center;
     display: grid;
     grid-area: submit;

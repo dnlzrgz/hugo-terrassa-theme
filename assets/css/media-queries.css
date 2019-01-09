@@ -69,23 +69,23 @@
         max-width: 75%;
     }
 
-    .contact-form {
+    .contact__form {
         grid-template-areas: "name" "email" "msg" "submit";
     }
 
-    .contact-field > input {
+    .contact__field > input {
         width: 25rem;
     }
 
-    .contact-field--name {
+    .contact__field--name {
         margin-right: 0;
     }
 
-    .contact-field--msg {
+    .contact__field--msg {
         margin-top: 0;
     }
 
-    .contact-field--submit {
+    .contact__field--submit {
         margin: 1.75rem 0;
     }
 
@@ -119,7 +119,7 @@
         margin-left: 0 1.75rem;
     }
 
-    .contact-field > input {
+    .contact__field > input {
         width: 20rem;
     }
 
@@ -151,7 +151,7 @@
 }
 
 @media only screen and (max-width: 340px) {
-    .contact-field > input {
+    .contact__field > input {
         width: 17rem;
     }
 }

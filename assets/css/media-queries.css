@@ -116,7 +116,7 @@
     }
 
     .hero__caption {
-        margin-left: 0 1.75rem;
+        margin: 0 1.75rem 0;
     }
 
     .contact__field > input {

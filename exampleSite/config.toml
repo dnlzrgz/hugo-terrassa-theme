@@ -6,7 +6,7 @@ defaultContentLanguage = "en"
 language = "en-US"
 paginate = 7
 
-theme = "terrassa"
+theme = "hugo-terrassa-theme"
 themesDir = "../.."
 
 [params]

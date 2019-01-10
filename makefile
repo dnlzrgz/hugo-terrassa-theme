@@ -6,6 +6,12 @@ HUGO_SITE=exampleSite
 
 build:
 	cd ./$(HUGO_SITE) && hugo
+build-min:
+	cd ./$(HUGO_SITE) && hugo --minify
+server:
+	cd ./$(HUGO_SITE) && hugo server -w
+server-draft:
+	cd ./$(HUGO_SITE) && hugo server -w -D
 docker:
 	docker image build --build-arg HUGO_SITE=$(HUGO_SITE) -t $(IMAGE_NAME) .
 docker-nc:

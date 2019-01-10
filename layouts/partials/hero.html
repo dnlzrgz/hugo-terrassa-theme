@@ -1,6 +1,6 @@
 {{ $bkg := index $.Params.images 0 }}
 
-<main class="hero" style="background-image: url('/images/{{ print $bkg }}');">
+<main class="hero" style="background-image: url('{{ $.Site.BaseURL }}images/{{ print $bkg }}');">
     <div class="hero__caption">
         {{ .Content }}
         {{ if .Site.Params.cta.show }}

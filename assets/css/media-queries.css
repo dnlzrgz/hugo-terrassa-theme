@@ -97,6 +97,10 @@
         margin: 0 10%;
     }
 
+    .post__footer {
+        margin: 0 10% 0.75rem;
+    }
+
     .pagination {
         width: 70%;
     }

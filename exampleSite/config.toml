@@ -4,14 +4,14 @@ author = "Daniel Zaragoza (Danielkvist)"
 googleAnalytics = ""
 defaultContentLanguage = "en"
 language = "en-US"
-paginate = 7
+paginate = 7 # Number of posts per page
 
 theme = "hugo-terrassa-theme"
-themesDir = "../.."
+themesDir = "../.." # Not necessary on production sites
 
 [params]
     description = "Terrassa is a simple, fast and responsive theme for Hugo with a strong focus on accessibility made from scratch."
-    favicon = "favicon.ico"
+    favicon = "favicon.ico" # Relative URL
 
 [params.cta] # Call To Action 
     show = true

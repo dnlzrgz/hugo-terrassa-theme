@@ -10,7 +10,7 @@ Terrassa is a simple, fast and responsive theme for Hugo with a strong focus on 
 - Consistent design throughout the entire site.
 - Classic navigation menu in large screen sizes.
 - Hamburger navigation menu in small screen sizes.
-- Great accessibility.
+- Great focus on accessibility.
 - Customizable call to action on the home page.
 - Contact form.
 - Ready for blogging.
@@ -22,7 +22,8 @@ And much more.
 This theme is still under development. And that means two things:
 
 1. It's under **active** development.
-2. There are still some little details to be improved and some unsupported features (like RSS).
+2. I'm open to suggestions.
+3. There are still some little details to be improved and some unsupported features (like RSS or Google AMP).
 
 ## Installation
 
@@ -48,13 +49,11 @@ theme = "terrassa"
 
 And that's it.
 
-> For more information about the *config.toml* file read the [official documentation](https://gohugo.io/getting-started/configuration/).
-
 ## Content
 
-> If you have any doubts about the following instructions feel free to take a look at the content folder of the *exampleSite* or look at the [official documentation](https://gohugo.io/content-management/).
+> If you have any doubts about the following instructions take a look at the content folder of the *exampleSite* or look at the [official documentation](https://gohugo.io/content-management/).
 
-Terrassa includes two base archetypes (learn more about archetypes [here](https://gohugo.io/content-management/archetypes/)):
+Terrassa includes two base archetypes:
 * A *default* archetype for content such as blogs posts.
 * A *page* archetype for pages like the About page.
 
@@ -141,7 +140,7 @@ For the contact page follow these instructions:
 $ hugo new contact/_index.md -k page
 ```
 
-The title and description will be used as the main title and subtitle respectively with a contact form.
+The title and description will be used as the main title and subtitle respectively with a contact form. The rest of the options are defined in the [config.toml](https://github.com/danielkvist/hugo-terrassa-theme/blob/master/exampleSite/config.toml).
 
 ## Config
 
@@ -149,13 +148,4 @@ For the configuration check the [config.toml](https://github.com/danielkvist/hug
 
 ## Font Awesome
 
-Terrassa uses the [Font Awesome](https://fontawesome.com/) icons through a CDN. Something that for the moment affects the performance of the page and that I'll try to fix soon.
-
-## Docker
-
-The Dockerfile is used for testing. 
-
-## Make
-
-Shame on me.  
-I hope to learn more about makefiles soon and improve as soon as possible.
+Terrassa uses the [Font Awesome](https://fontawesome.com/) icons through a CDN. Something that for the moment affects the performance.

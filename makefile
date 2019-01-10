@@ -13,9 +13,9 @@ server:
 server-draft:
 	cd ./$(HUGO_SITE) && hugo server -w -D
 docker:
-	docker image build --build-arg HUGO_SITE=$(HUGO_SITE) -t $(IMAGE_NAME) .
+	docker image build --build-arg HUGO_SITE=$(HUGO_SITE) --build-arg EXPOSE=$(IMAGE_PORT) -t $(IMAGE_NAME) .
 docker-nc:
-	docker image build --build-arg HUGO_SITE=$(HUGO_SITE) --no-cache -t $(IMAGE_NAME) .
+	docker image build --build-arg HUGO_SITE=$(HUGO_SITE) --build-arg EXPOSE=$(IMAGE_PORT) --no-cache -t $(IMAGE_NAME) .
 run:
 	docker container run -d -p $(IMAGE_PORT):$(HOST_PORT) --name $(APP_NAME) $(IMAGE_NAME)
 stop:

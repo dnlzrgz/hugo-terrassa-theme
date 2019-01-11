@@ -110,11 +110,11 @@
 
 @media only screen and (max-width: 576px) {
     .header__title {
-        margin-left: 1.5rem;
+        margin-left: 1.75rem;
     }
 
     .toggle {
-        right: 1.5rem;
+        right: 1.75rem;
     }
 
     .hero {

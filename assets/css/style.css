@@ -5,7 +5,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    height: 3.5rem;
     position: fixed;
     top: 0;
     width: 100%;
@@ -16,7 +15,7 @@
     align-items: center;
     display: flex;
     justify-content: flex-start;
-    margin-left: 4.5rem;
+    margin: 1rem 4.5rem;
 }
 
 .header__title__link {
@@ -33,9 +32,7 @@
 
 .menu__items {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
-    text-align: center;
     width: 100%;
 }
 
@@ -88,6 +85,7 @@
     align-self: center;
     position: absolute;
     right: 4.5rem;
+    user-select: none;
 }
 
 .hamburger__toggle {

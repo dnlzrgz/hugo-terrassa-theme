@@ -1,0 +1,10 @@
+{{ $items := (where $.Site.RegularPages "Type" "sections") }}
+{{ $len := (len $items) }}
+
+{{ range $i, $e := $items }}
+{{ partial "section.html" .}}
+
+{{ if ne (add $i 1) $len }}
+{{ partial "separator.html" . }}
+{{ end }}
+{{ end}}

@@ -3,11 +3,14 @@ APP_NAME=terrassa
 IMAGE_PORT=80
 HOST_PORT=80
 HUGO_SITE=exampleSite
+HUGO_BASE_URL=https://danielkvist.github.io/terrassa/
 
 build:
 	cd ./$(HUGO_SITE) && hugo
 build-min:
 	cd ./$(HUGO_SITE) && hugo --minify
+build-deploy:
+	cd ./$(HUGO_SITE) && hugo --minify --baseURL="$(HUGO_BASE_URL)"
 server:
 	cd ./$(HUGO_SITE) && hugo server -w
 server-draft:

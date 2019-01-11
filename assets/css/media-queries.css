@@ -57,6 +57,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .header__title {
+        font-size: 1rem;
+    }
+
     .menu {
         display: none;
         visibility: hidden;

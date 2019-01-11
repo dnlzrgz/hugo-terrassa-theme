@@ -59,10 +59,12 @@
 @media only screen and (max-width: 768px) {
     .menu {
         display: none;
+        visibility: hidden;
     }
 
     .hamburger-menu {
-        display: block;
+        display: grid;
+        visibility: visible;
     }
 
     .card {

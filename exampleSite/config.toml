@@ -12,11 +12,12 @@ themesDir = "../.." # Not necessary on production sites
 [params]
     description = "Terrassa is a simple, fast and responsive theme for Hugo with a strong focus on accessibility made from scratch."
     favicon = "favicon.ico" # Relative URL
+    logo = "" # Relative URL
 
 [params.cta] # Call To Action 
     show = true
     cta = "Contact"
-    link = "contact"
+    link = "contact" # Relative URL
 
 [params.form] # Contact form
     action = "https://formspree.io/your@email.com"

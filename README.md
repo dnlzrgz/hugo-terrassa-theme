@@ -22,8 +22,8 @@ And much more.
 This theme is still under development. And that means two things:
 
 1. It's under **active** development.
-2. I'm open to suggestions.
-3. There are still some little details to be improved and some unsupported features (like RSS or Google AMP).
+2. I'm open to suggestions and contributions (and I'll be open to them).
+3. There are still some little details to be improved and some unsupported features (like Google AMP).
 
 ## Installation
 
@@ -49,13 +49,12 @@ theme = "terrassa"
 
 And that's it.
 
-## Content
+## Archetypes
 
-> If you have any doubts about the following instructions take a look at the content folder of the *exampleSite* or look at the [official documentation](https://gohugo.io/content-management/).
-
-Terrassa includes two base archetypes:
-* A *default* archetype for content such as blogs posts.
-* A *page* archetype for pages like the About page.
+Terrassa includes three base archetypes:
+* *default*: for content such as blogs posts.
+* *section*: for the sections on your Home page.
+* *page*: for pages like the About page.
 
 So be careful. Creating a new site with Hugo also creates a default archetype that replaces the one provided by Terrassa.
 
@@ -73,7 +72,7 @@ Or to create another page:
 $ hugo new example.md -k page
 ```
 
-You'll get something like this inside your content folder.
+You'll get something like this:
 
 ```markdown
 ---
@@ -86,13 +85,34 @@ weight: 0
 ---
 ```
 
-> On all but the main page the title is displayed.
-
 Some properties are used as follows:
 * *title*: is the name that will be displayed in the menu. In the rest of the single pages the main title of the content.
 * *description*: in the case of the home page the description is not shown. In the rest of the single pages it is shown as a subtitle.
 * *images*: in the case of the home page the first image is used as the background image for the hero.
 * *weight*: sets the order of the items in the menu.
+
+## Home page Sections
+
+To create a new section in your Home page follow the next steps:
+
+```bash
+$ hugo new sections/example.md -k section
+```
+
+You'll come across something like this:
+
+```markdown
+---
+title: "Example"
+description: ""
+draft: true
+weight: 0
+---
+```
+
+The *title* is used as the title of your new section and the content is the body. At this moment the *description* is not used for anything.
+
+The *weight* defines the order in case of having more than one section.
 
 ### Blog or List pages
 
@@ -102,7 +122,7 @@ To create a Blog or a page with a similar structure follow these steps:
 $ hugo new posts/_index.md -k page
 ```
 
-> In this case it is only necessary to set, if wanted, the title and the weight in the *_index.md*.
+> In this case it is only necessary to set, if wanted, the *title* and the *weight* in the *_index.md*.
 
 To add a new posts run the following command:
 
@@ -110,7 +130,7 @@ To add a new posts run the following command:
 $ hugo new posts/bad-example.md
 ```
 
-Inside this file (and anyone using Terrassa's default archetype) you'll find something like this:
+Inside this file you'll find something like this:
 
 ```markdown
 ---
@@ -124,11 +144,11 @@ draft: true
 tags: []
 ---
 ```
-The title and description are used as the main title and subtitle respectively.
+The *title* and *description* are used as the main title and subtitle respectively.
 
 > You can find more information about each parameter in the [official documentation](https://gohugo.io/content-management/front-matter/).
 
-Then, the corresponding section will show a list of cards with the title, the date, a summary of the content (truncated to 480 words) and a list of labels if any.
+Then, the corresponding section will show a list of cards with the *title*, the *date*, a *summary of the content* (truncated to 480 words) and a list of *tags* if any.
 
 ![Hugo Terrassa theme Blog section screenshot](https://github.com/danielkvist/hugo-terrassa-theme/blob/master/images/blog-screenshot.png)
 
@@ -140,7 +160,7 @@ For the contact page follow these instructions:
 $ hugo new contact/_index.md -k page
 ```
 
-The title and description will be used as the main title and subtitle respectively with a contact form. The rest of the options are defined in the [config.toml](https://github.com/danielkvist/hugo-terrassa-theme/blob/master/exampleSite/config.toml).
+The *title* and *description* will be used as the main title and subtitle respectively with a contact form. The rest of the options are defined in the [config.toml](https://github.com/danielkvist/hugo-terrassa-theme/blob/master/exampleSite/config.toml).
 
 ## Config
 

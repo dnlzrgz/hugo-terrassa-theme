@@ -1,7 +1,7 @@
 ---
 title : "Simple People"
 description: ""
-draft: true
+draft: false
 weight: 3
 ---
 

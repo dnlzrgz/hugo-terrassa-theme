@@ -1,7 +1,7 @@
 ---
 title : "Simple Values"
 description: ""
-draft: true
+draft: false
 weight: 1
 ---
 

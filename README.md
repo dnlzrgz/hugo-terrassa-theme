@@ -88,7 +88,7 @@ weight: 0
 Some properties are used as follows:
 * *title*: is the name that will be displayed in the menu. In the rest of the single pages the main title of the content.
 * *description*: in the case of the home page the description is not shown. In the rest of the single pages it is shown as a subtitle.
-* *images*: in the case of the home page the first image is used as the background image for the hero.
+* *images*: in the case of the home page the first image is used as the background image for the hero and to share on social networks (with [Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards.html) and [Facebook Graph](https://developers.facebook.com/docs/graph-api/)). In every other page or post is used only for share on social networks.
 * *weight*: sets the order of the items in the menu.
 
 ## Home page Sections

@@ -458,6 +458,18 @@
     color: white;
 }
 
+/* 404 */
+.notfound {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.notfound__title {
+    font-size: var(--title);
+}
+
 /* COPY */
 .copy {
     display: flex;

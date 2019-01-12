@@ -11,6 +11,8 @@ tags: ["health", "music", "architecture"]
 
 6 uses for living room decors. [Why living room ideas are killing you](#). The oddest place you will find decorating ideas. Why the world would end without apartment guides. 12 things that won't happen in interior design ideas. How twitter can teach you about bathroom designs. The 12 best floor plan youtube videos. 9 bs facts about living room decors everyone thinks are true. The only home builder resources you will ever need. How decorating ideas can help you predict the future.
 
+> "Show me the code".
+
 [The 10 best resources for modular homes](#). Home builders by the numbers. *Why you'll never succeed at interior design ideas*. 12 myths uncovered about small house plans. How designer furniture can help you live a better life. Why the world would end without floor plans. How hollywood got interior designs all wrong. An expert interview about kitchen designs. Why our world would end if bathroom designs disappeared. Why mom was right about bathroom designs.
 
 ```golang

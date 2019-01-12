@@ -4,7 +4,7 @@ author = "Daniel Zaragoza (Danielkvist)"
 googleAnalytics = ""
 defaultContentLanguage = "en"
 language = "en-US"
-paginate = 7 # Number of posts per page
+paginate = 3 # Number of posts per page
 
 theme = "hugo-terrassa-theme"
 themesDir = "../.." # Not necessary on production sites

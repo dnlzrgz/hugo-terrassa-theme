@@ -145,6 +145,10 @@
         max-width: 90%;
     }
 
+    .pagination {
+        width: 90%;
+    }
+
     .footer {
         grid-template-areas: "social" "contact" "copy";
         grid-template-columns: 1fr;

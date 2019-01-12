@@ -63,7 +63,7 @@ textarea:focus {
 }
 
 pre {
-    border: 2px solid var(--divider);
+    border: 1px solid var(--divider);
     overflow: auto;
     margin-bottom: 1.75rem;
     padding: 1rem 1.75rem;

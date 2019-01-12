@@ -90,11 +90,13 @@ body {
     height: 100vh;
     hyphens: auto;
     line-height: 1.55;
+    overflow-wrap: break-word;
     text-rendering: optimizeLegibility;
 }
 
 blockquote,
 q {
+    font-size: 1.1rem;
     quotes: none;
 }
 
@@ -153,6 +155,7 @@ code,
 kbd {
     font-family: monospace;
     font-size: 1em;
+    white-space: pre-wrap;
 }
 
 select {

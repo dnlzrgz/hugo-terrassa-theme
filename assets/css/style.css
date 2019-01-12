@@ -277,7 +277,7 @@
 .pagination {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 1.75rem;
+    margin-bottom: 2.75rem;
     width: 20%;
 }
 

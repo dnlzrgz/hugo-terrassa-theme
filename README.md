@@ -91,8 +91,6 @@ Some properties are used as follows:
 * *images*: in the case of the home page the first image is used as the background image for the hero and to share on social networks (with [Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards.html) and [Facebook Graph](https://developers.facebook.com/docs/graph-api/)). In every other page or post is used only for share on social networks.
 * *weight*: sets the order of the items in the menu.
 
-> At the moment you need to add an entry *images: []* on the front matter of your *_index.md* (According to the front matter format you have chosen). This option is used as background for the hero and can be left as an empty array if you do not want to use any background image.
-
 ## Home page Sections
 
 To create a new section in your Home page follow the next steps:

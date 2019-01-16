@@ -1,4 +1,5 @@
 <footer class="footer">
+    {{ if $.Site.Params.social }}
     {{ $items := $.Site.Params.social }}
     {{ $len := (len $items) }}
 
@@ -14,6 +15,7 @@
         {{ end }}
         {{ end }}
     </div>
+    {{ end }}
     {{ end }}
 
     <address class="footer__contact">

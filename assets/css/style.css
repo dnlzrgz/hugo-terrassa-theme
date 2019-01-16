@@ -440,9 +440,9 @@
 }
 
 .footer__contact {
+    align-items: center;
     display: flex;
     grid-area: contact;
-    padding: 1.75rem 0;
     justify-content: space-around;
     width: 100%;
 }
@@ -476,6 +476,7 @@
 
 /* COPY */
 .copy {
+    align-items: center;
     display: flex;
     font-size: 0.95rem;
     grid-area: copy;

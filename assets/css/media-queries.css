@@ -21,8 +21,9 @@
     }
 
     .footer__contact {
+        align-items: start;
         flex-direction: column;
-        padding: 1.75rem;
+        padding: 1.75rem 4.5rem;
     }
 
     .footer__contact__item {
@@ -35,6 +36,7 @@
 
     .copy {
         align-items: flex-end;
+        padding-right: 4.5rem;
     }
 }
 

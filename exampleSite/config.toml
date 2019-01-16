@@ -67,6 +67,9 @@ themesDir = "../.." # Not necessary on production sites
     flickr = ""
     "500px" = ""
 
+[params.copy] # Copyright
+    copy = "" # Empty for default content
+
 [privacy]
     [privacy.googleAnalytics]
         anonymizeIP = true

@@ -90,11 +90,15 @@
     visibility: hidden;
 }
 
+.toggle,
+.hamburger__toggle {
+    user-select: none;
+}
+
 .toggle {
     align-self: center;
     position: absolute;
     right: 4.5rem;
-    user-select: none;
 }
 
 .hamburger__toggle {

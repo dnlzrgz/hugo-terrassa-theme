@@ -1,6 +1,6 @@
 /* HEADER */
 .header {
-    background-color: white;
+    background-color: var(--white);
     box-shadow: 0 1px 5px var(--divider);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -111,7 +111,7 @@
 }
 
 .hamburger__items {
-    background-color: white;
+    background-color: var(--white);
     box-shadow: -1px 2px 5px var(--divider);
     height: 100vh;
     position: absolute;
@@ -382,7 +382,7 @@
 
 .footer__social {
     align-items: center;
-    background-color: white;
+    background-color: var(--white);
     border-top: 1px solid var(--divider);
     border-bottom: 1px solid var(--divider);
     display: flex;
@@ -395,7 +395,7 @@
 .footer__social__link {
     background-color: var(--primary-text);
     border-radius: 50%;
-    color: white;
+    color: var(--white);
     font-size: var(--subheader);
     height: 35px;
     line-height: 35px;
@@ -448,7 +448,7 @@
 }
 
 .footer__contact__item {
-    color: white;
+    color: var(--white);
     margin: 0;
 }
 
@@ -459,7 +459,7 @@
 
 .footer__contact__link,
 .footer__contact__link:hover {
-    color: white;
+    color: var(--white);
 }
 
 /* 404 */
@@ -515,7 +515,7 @@
 .ripple-btn {
     background-color: var(--primary-dark);
     border: none;
-    color: white;
+    color: var(--white);
     overflow: hidden;
     padding: 1.15rem 4.5rem;
     position: relative;
@@ -525,7 +525,7 @@
 
 .ripple-btn:hover,
 .ripple-btn:focus {
-    color: white;
+    color: var(--white);
     background-color: var(--primary);
 }
 

@@ -77,6 +77,10 @@
         visibility: visible;
     }
 
+    .hamburger__items__item {
+        margin-right: 1.75rem;
+    }
+
     .section {
         margin: 2.75rem 10%;
     }

@@ -27,6 +27,7 @@ themesDir = "../.." # Not necessary on production sites
     link = "contact" # Relative URL
 
 [params.form] # Contact form
+    netlify = true # Use only if you are using Netlify
     action = "https://formspree.io/your@email.com"
     method = "POST"
     inputNameName = "name"

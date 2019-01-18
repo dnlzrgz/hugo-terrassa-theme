@@ -7,9 +7,10 @@
 
     {{ if $.Site.Params.form.netlify }}
     <form name="contact" method="POST" data-netlify="true" class="contact__form" id="contactForm">
-    {{ else }}
-    <form action="{{ $.Site.Params.form.action }}" method="{{ lower $.Site.Params.form.method }}" class="contact__form" id="contactForm">
-    {{ end }}
+        {{ else }}
+        <form action="{{ $.Site.Params.form.action }}" method="{{ lower $.Site.Params.form.method }}" class="contact__form"
+            id="contactForm">
+            {{ end }}
 
             <!-- Name -->
             <div class="contact__field contact__field--name">
@@ -30,7 +31,7 @@
             <!-- Message -->
             <div class="contact__field contact__field--msg">
                 <label for="{{ $.Site.Params.form.inputMsgName }}">{{ $.Site.Params.form.inputMsgLabel }}</label>
-                <textarea name="{{ $.Site.Params.form.inputMsgName }}" id="{{ $.Site.Params.form.inputMsgName }}" form="contact-form"
+                <textarea name="{{ $.Site.Params.form.inputMsgName }}" id="{{ $.Site.Params.form.inputMsgName }}" form="contactForm"
                     maxlength="{{ $.Site.Params.form.inputMsgLength }}" id="{{ $.Site.Params.form.inputMsgName }}"
                     arial-labelledby="{{ $.Site.Params.form.InputMsgName }}" required></textarea>
             </div>

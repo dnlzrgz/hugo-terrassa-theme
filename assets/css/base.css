@@ -49,10 +49,6 @@ i {
     font-size: var(--subheader);
 }
 
-img {
-    height: auto;
-}
-
 input,
 textarea {
     border: 2px solid var(--divider);

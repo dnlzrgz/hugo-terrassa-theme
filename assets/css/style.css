@@ -271,6 +271,14 @@
     margin-bottom: 1.75rem;
 }
 
+.post__body > ol {
+    list-style-type: decimal;
+}
+
+.post__body > ul {
+    list-style-type: disc;
+}
+
 .post__footer {
     display: flex;
     justify-content: center;

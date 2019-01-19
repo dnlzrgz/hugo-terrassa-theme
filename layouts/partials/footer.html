@@ -7,7 +7,7 @@
     <div class="footer__social">
         {{ range $k, $v := $items }}
         {{ if $v}}
-        <a href="{{ $v }}" class="footer__social__link" alt="{{ $k }}" target="_blank" aria-label="{{ $v }}">
+        <a href="{{ $v }}" class="footer__social__link" alt="{{ $k }}" target="_blank" aria-label="{{ $v }}" rel="noopener">
             <span>
                 <i class="fab fa-{{ $k }}"></i>
             </span>

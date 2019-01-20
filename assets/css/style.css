@@ -21,7 +21,6 @@
 
 .header__title__link {
     color: var(--primary-dark);
-    max-width: 5.75rem;
 }
 
 .header__title__logo {

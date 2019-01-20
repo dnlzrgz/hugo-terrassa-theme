@@ -17,14 +17,6 @@ Terrassa is a simple, fast and responsive theme for Hugo with a strong focus on 
 
 And much more.
 
-## Warning
-
-This theme is still under development. And that means two things:
-
-1. It's under **active** development.
-2. I'm open to suggestions and contributions (and I'll be open to them).
-3. There are still some little details to be improved and some unsupported features (like Google AMP).
-
 ## Installation
 
 To install Terrassa run the followings command inside your Hugo site:
@@ -40,6 +32,8 @@ Or
 $ cd themes
 $ git submodule add https://github.com/danielkvist/hugo-terrassa-theme.git terrassa
 ```
+
+> You can also download the last release [here](https://github.com/danielkvist/hugo-terrassa-theme/releases).
 
 Back to your Hugo site directory open the *config.toml* file and add the following line:
 

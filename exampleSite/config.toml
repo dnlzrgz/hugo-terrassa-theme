@@ -50,6 +50,7 @@ themesDir = "../.." # Not necessary on production sites
 [params.contact] # Contact info
     email = "example@gmail.com"
     phone = "xxx xxx xxx"
+    skype = ""
     address = "419 Creek St. Revere, MA 02151"
 
 [params.social] # Social networks

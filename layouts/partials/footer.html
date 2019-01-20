@@ -19,28 +19,37 @@
     {{ end }}
 
     <address class="footer__contact">
-        {{ if .Site.Params.contact.email }}
+        {{ if $.Site.Params.contact.email }}
         <p class="footer__contact__item">
             <span><i class="far fa-envelope"></i></span>
-            <a href="mailto:{{ .Site.Params.contact.email}}" class="footer__contact__link" alt="Email">
-                {{ .Site.Params.contact.email }}
+            <a href="mailto:{{ $.Site.Params.contact.email}}" class="footer__contact__link" alt="Email">
+                {{ $.Site.Params.contact.email }}
             </a>
         </p>
         {{ end }}
 
-        {{ if .Site.Params.contact.phone }}
+        {{ if $.Site.Params.contact.phone }}
         <p class="footer__contact__item">
             <span><i class="fas fa-phone"></i></span>
-            <a href="tel:{{ .Site.Params.contact.phone }}" class="footer__contact__link" alt="Phone">
-                {{ .Site.Params.contact.phone}}
+            <a href="tel:{{ $.Site.Params.contact.phone }}" class="footer__contact__link" alt="Phone">
+                {{ $.Site.Params.contact.phone }}
             </a>
         </p>
         {{ end }}
 
-        {{ if .Site.Params.contact.address }}
+        {{ if $.Site.Params.contact.skype }}
+        <p class="footer__contact__item">
+            <span><i class="fab fa-skype"></i></span>
+            <a href="skype:{{ $.Site.Params.contact.skype }}" class="footer__contact__link" alt="Skype">
+                {{ $.Site.Params.contact.skype }}
+            </a>
+        </p>
+        {{ end }}
+
+        {{ if $.Site.Params.contact.address }}
         <p class="footer__contact__item">
             <span><i class="fas fa-map-marker-alt"></i></span>
-            {{ .Site.Params.contact.address }}
+            {{ $.Site.Params.contact.address }}
         </p>
         {{ end }}
     </address>

@@ -85,7 +85,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Oxygen, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-kerning: auto;
     -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothin: antialised;
+    -webkit-font-smoothing: antialised;
     font-weight: 400;
     height: 100vh;
     hyphens: auto;
@@ -180,3 +180,4 @@ table {
 :focus:not(:focus-visible) {
     outline: none;
 }
+

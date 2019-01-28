@@ -18,15 +18,11 @@
         {{ end }}
     </header>
 
-    <hr>
-
     <main class="post__body">
         {{ .Content }}
     </main>
 
     {{ if ne .Type "page" }}
-    <hr>
-
     <footer class="post__footer">
         {{ .Render "tags" }}
     </footer>

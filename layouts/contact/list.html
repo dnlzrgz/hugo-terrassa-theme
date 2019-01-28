@@ -3,8 +3,6 @@
     <h1 class="contact__title">{{ .Title }}</h1>
     <p class="contact__content">{{ .Description }}</p>
 
-    <hr>
-
     {{ if $.Site.Params.form.netlify }}
     <form name="contact" method="POST" data-netlify="true" class="contact__form" id="contactForm">
         {{ else }}

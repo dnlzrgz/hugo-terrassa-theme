@@ -125,7 +125,6 @@
     margin: 1.75rem 0 0 2.75rem;
 }
 
-
 .hamburger__items__item__link {
     color: var(--primary-text);
 }
@@ -177,7 +176,8 @@
 
 /* SECTION */
 .section {
-    margin: 2.75rem 30%;
+    margin: 2.75rem 24%;
+    text-justify: distribute;
 }
 
 .section__title {
@@ -261,11 +261,7 @@
 }
 
 .post__body {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 1.75rem 30% 0.75rem;
+    margin: 1.75rem 24% 0.75rem;
 }
 
 .post__body > figure {

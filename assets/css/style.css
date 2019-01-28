@@ -302,6 +302,11 @@
     margin-bottom: 1.1rem;
 }
 
+.post__body > ul,
+.post__body > ol {
+    margin-left: 3.75rem;
+}
+
 .post__footer {
     display: flex;
     justify-content: center;

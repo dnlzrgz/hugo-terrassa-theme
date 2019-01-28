@@ -207,7 +207,9 @@
 /* CARD */
 .card {
     margin-bottom: 2.75rem;
-    max-width: 50%;
+    max-width: 900px;
+    text-justify: distribute;
+    width: 70%;
 }
 
 .card__header__link {

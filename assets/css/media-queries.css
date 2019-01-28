@@ -49,10 +49,6 @@
         font-size: 1.25rem;
     }
 
-    .card {
-        max-width: 70%;
-    }
-
     .pagination {
         width: 50%;
     }
@@ -86,7 +82,7 @@
     }
 
     .card {
-        max-width: 75%;
+        width: 85%;
     }
 
     .contact__form {
@@ -148,7 +144,7 @@
     }
 
     .card {
-        max-width: 90%;
+        width: 90%;
     }
 
     .pagination {

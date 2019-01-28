@@ -276,6 +276,32 @@
     list-style-type: disc;
 }
 
+.post__body > blockquote > p {
+    margin: 0.75rem 24%;
+    text-align: center;
+}
+
+.post__body > blockquote > p::before,
+.post__body > blockquote > p::after {
+    background-color: var(--divider);
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+}
+
+.post__body > blockquote > p::before {
+    margin-bottom: 1rem;
+}
+
+.post__body > blockquote > p::after {
+    margin-top: 1rem;
+}
+
+.post__body > blockquote > p::after {
+    margin-bottom: 1.1rem;
+}
+
 .post__footer {
     display: flex;
     justify-content: center;

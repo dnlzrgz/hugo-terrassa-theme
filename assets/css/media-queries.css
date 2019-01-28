@@ -113,6 +113,10 @@
         margin: 0 9%;
     }
 
+    .post__body > blockquote > p {
+        margin: 0 5%;
+    }
+
     .post__footer {
         margin: 0 10% 0.75rem;
     }

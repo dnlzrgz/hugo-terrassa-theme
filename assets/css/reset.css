@@ -57,10 +57,7 @@ table,
 caption,
 tbody, 
 tfoot, 
-thead,
-tr, 
-th, 
-td {
+thead {
     border: 0;
     padding: 0;
     margin: 0;
@@ -162,9 +159,11 @@ select {
     text-transform: none;
 }
 
-table {
+table, td, tr, th {
+    margin: auto;
     border-collapse: collapse;
-    border-spacing: 0;
+    border: 1px solid var(--primary-text);
+    padding: 10px;
 }
 
 [hidden] {

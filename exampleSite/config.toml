@@ -26,7 +26,7 @@ themesDir = "../.." # Not necessary on production sites
     cta = "Contact"
     link = "contact" # Relative URL
 
-[params.separator] # Separators between section on the home page
+[params.separator] # Separators between sections on the home page
     show = false
 
 [params.fa] # Font Awesome options

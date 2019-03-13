@@ -26,8 +26,12 @@ themesDir = "../.." # Not necessary on production sites
     cta = "Contact"
     link = "contact" # Relative URL
 
-[params.separator] # Separator between section on the home page
+[params.separator] # Separators between section on the home page
     show = false
+
+[params.fa] # Font Awesome options
+    version = "5.7.2"
+    integrity = "sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
 
 [params.form] # Contact form
     netlify = true # Use only if you are using Netlify

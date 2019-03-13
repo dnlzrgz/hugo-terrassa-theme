@@ -26,6 +26,9 @@ themesDir = "../.." # Not necessary on production sites
     cta = "Contact"
     link = "contact" # Relative URL
 
+[params.separator] # Separator between section on the home page
+    show = false
+
 [params.form] # Contact form
     netlify = true # Use only if you are using Netlify
     action = "https://formspree.io/your@email.com"

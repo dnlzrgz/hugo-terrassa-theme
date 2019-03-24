@@ -553,8 +553,8 @@
 
 .ripple-btn:hover,
 .ripple-btn:focus {
-	color: var(--white);
 	background-color: var(--primary);
+	color: var(--white);
 }
 
 .ripple-btn::after {

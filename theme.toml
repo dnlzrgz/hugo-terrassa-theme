@@ -2,7 +2,7 @@ name = "Terrassa"
 license = "MIT"
 licenselink = "https://github.com/danielkvist/hugo-terrassa-theme/blob/master/LICENSE"
 description = "A simple, fast and responsive theme for Hugo with a strong focus on accessibility."
-homepage = "http://github.com/danielkvist/hugo-terrassa-theme"
+homepage = "https://github.com/danielkvist/hugo-terrassa-theme"
 tags = ["blog", "clean", "personal", "company", "google analytics", "contact form","mobile", "modern", "accessibility", "font awesome"]
 features = [
   "responsive design",

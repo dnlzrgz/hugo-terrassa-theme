@@ -1,5 +1,4 @@
 FROM nginx
-LABEL maintainer="d94.zaragoza@gmail.com"
 ARG EXPOSE=80
 EXPOSE ${EXPOSE}/tcp
 EXPOSE ${EXPOSE}/udp

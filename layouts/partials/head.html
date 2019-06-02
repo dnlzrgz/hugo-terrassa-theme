@@ -7,7 +7,7 @@
 	<link rel="icon" href="{{ $.Site.BaseURL }}{{ $.Site.Params.favicon }}" />
 	<meta name="description" content="{{ $.Site.Params.description }}" />
 
-	{{ .Hugo.Generator }}
+	{{ hugo.Generator }}
 
 	{{ if .Site.GoogleAnalytics }}
 	{{ template "_internal/google_analytics.html" . }}

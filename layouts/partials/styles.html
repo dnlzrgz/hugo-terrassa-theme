@@ -3,7 +3,9 @@
 {{ $style := resources.Get "css/style.css" }}
 {{ $media := resources.Get "css/media-queries.css" }}
 {{ $animations := resources.Get "css/animations.css" }}
-{{ $bundle := slice $reset $base $style $media $animations | resources.Concat "css/bundle.css" }}
-{{ $css := $bundle | resources.Minify | resources.Fingerprint "sha512" }}
+{{ $custom := resources.Get "css/custom.css" }}
+{{ $bundle := slice $reset $base $style $media $animations $custom | resources.Concat "css/bundle.css" }}
+
+{{ $css := $bundle | resources.Minify }}
 
 <link rel="stylesheet" href="{{ $css.Permalink }}">

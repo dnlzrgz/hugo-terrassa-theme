@@ -4,24 +4,30 @@ Terrassa is a simple, fast and responsive theme for Hugo with a strong focus on 
 
 ![Hugo Terrassa theme screenshot](https://github.com/danielkvist/hugo-terrassa-theme/blob/master/images/screenshot.png)
 
-## Theme features
+## Features
 
 - Coherent responsive design.
 - Consistent design throughout the entire site.
 - Classic navigation menu in large screen sizes.
-- Hamburger navigation menu in small screen sizes.
-- Great focus on accessibility.
+- Hamburger menu in mobile devices.
+- Focus on accessibility.
 - Customizable call to action on the home page.
 - Contact form.
 - Ready for blogging.
 
-And much more.
+## Some things that will be added in the future
+
+- A better hamburger menu.
+- Service Workers.
+- Easier ways to customize fonts and colors.
+- Support for comments.
 
 ## Installation
 
 To install Terrassa run the followings command inside your Hugo site:
 
 ```bash
+$ mkdir themes
 $ cd themes
 $ git clone https://github.com/danielkvist/hugo-terrassa-theme.git terrassa
 ```
@@ -29,19 +35,30 @@ $ git clone https://github.com/danielkvist/hugo-terrassa-theme.git terrassa
 Or
 
 ```bash
+$ mkdir themes
 $ cd themes
 $ git submodule add https://github.com/danielkvist/hugo-terrassa-theme.git terrassa
 ```
 
 > You can also download the last release [here](https://github.com/danielkvist/hugo-terrassa-theme/releases).
 
-Back to your Hugo site directory open the *config.toml* file and add the following line:
+Back to your Hugo site directory open the *config.toml* file and add or change the following line:
 
 ```toml
 theme = "terrassa"
 ```
 
-And that's it.
+## Configuration
+
+You can find an example of the final configuration [here](https://github.com/danielkvist/hugo-terrassa-theme/blob/master/exampleSite/config.toml).
+
+### Custom CSS
+
+To add custom CSS you have to create a folder called ```assets``` in the root of your project. Then, create another folder called ```css``` inside ```assets```. And finally, a file called ```custom.css``` inside ```css``` with your styles.
+
+```bash
+$ mkdir -p ./assets/css/
+```
 
 ## Archetypes
 

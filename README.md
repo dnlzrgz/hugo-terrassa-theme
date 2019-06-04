@@ -50,7 +50,163 @@ theme = "terrassa"
 
 ## Configuration
 
-You can find an example of the final configuration [here](https://github.com/danielkvist/hugo-terrassa-theme/blob/master/exampleSite/config.toml).
+> You can find an example of the final configuration [here](https://github.com/danielkvist/hugo-terrassa-theme/blob/master/exampleSite/config.toml).
+
+### Basic
+
+```toml
+baseurl = "/"           # The base URL of your Hugo site
+title = "titlehere"     # The title of your Hugo site
+author = "authorhere"   # The author name
+googleAnalytics = ""    # Your Google Analytics tracking ID
+enableRobotsTXT = true
+language = "en-US"
+paginate = 7            # The numbers of posts per page
+theme = "terrassa"      # Your Hugo theme
+```
+
+There's a lot more information about the basic configuration of an Hugo site [here](https://gohugo.io/getting-started/configuration/).
+
+### Description, favicon and logo params
+
+```toml
+[params]
+    description = "" # Description for the meta description tag
+    favicon = ""     # Relative URL for your favicon
+    logo = ""        # Absolute URL for your logo
+```
+
+### Hero
+
+```toml
+[params.hero]
+    textColor = "" # Empty for default color
+```
+
+### Call To Action
+
+```toml
+[params.cta] # Call To Action 
+    show = true
+    cta = "Contact"  # Text message of the CTA
+    link = "contact" # Relative URL
+```
+
+### Separators between Home sections
+
+```toml
+[params.separator]
+    show = false
+```
+
+### Contact information
+
+```toml
+[params.contact]
+    email = ""
+    phone = ""
+    skype = ""
+    address = ""
+```
+
+### Social Networks
+
+```toml
+[params.social]
+    twitter = ""
+    facebook = ""
+    github = ""
+    gitlab = ""
+    codepen = ""
+    instagram = ""
+    pinterest = ""
+    youtube = ""
+    linkedin = ""
+    weibo = ""
+    mastodon = ""
+    tumblr = ""
+    flickr = ""
+    "500px" = ""
+```
+
+> Icons for social networks depend on Font Awesome.
+
+### Font Awesome
+
+```toml
+[params.fa]
+    version = ""    # Font Awesome version
+    integrity = ""  # Font Awesome integrity for the Font Awesome script
+```
+
+### Copyright message
+
+```toml
+[params.copy]
+    message = ""
+```
+
+### Agreements
+
+```toml
+[params.agreement]
+    message = ""    # You can use HTML tags
+```
+
+### Posts
+
+```toml
+[params.posts]
+    showAuthor = true
+    showDate = true
+    showTags = true
+    dateFormat = "Monday, Jan, 2006"
+```
+
+### Form
+
+```toml
+[params.form]
+    netlify = true # Only if you are using Netlify
+    action = ""
+    method = ""
+    inputNameName = ""
+    inputNameLabel = ""
+    inputNamePlaceholder = ""
+    inputEmailName = ""
+    inputEmailLabel = ""
+    inputEmailPlaceholder = ""
+    inputMsgName = ""
+    inputMsgLabel = ""
+    inputMsgLength = 750
+    inputSubmitValue = ""
+```
+
+### Privacy
+
+```toml
+[privacy]
+    [privacy.googleAnalytics]
+        anonymizeIP = true
+        disable = false
+        respectDoNotTrack = true
+        useSessionStorage = false
+    [privacy.instagram]
+        disable = false
+        simple = false
+    [privacy.twitter]
+        disable = false
+        enableDNT = true
+        simple = false
+    [privacy.vimeo]
+        disable = false
+        simple = false
+    [privacy.youtube]
+        disable = false
+        privacyEnhanced = true
+```
+
+To learn more about privacy configuration check the [official documentation](https://gohugo.io/about/hugo-and-gdpr/).
 
 ### Custom CSS
 
@@ -172,11 +328,3 @@ $ hugo new contact/_index.md -k page
 ```
 
 The *title* and *description* will be used as the main title and subtitle respectively with a contact form. The rest of the options are defined in the [config.toml](https://github.com/danielkvist/hugo-terrassa-theme/blob/master/exampleSite/config.toml).
-
-## Config
-
-For the configuration check the [config.toml](https://github.com/danielkvist/hugo-terrassa-theme/blob/master/exampleSite/config.toml) of the *exampleSite* and the [official documentation](https://gohugo.io/getting-started/configuration/) to see all the options.
-
-## Font Awesome
-
-Terrassa uses the [Font Awesome](https://fontawesome.com/) icons through a CDN. Something that for the moment affects the performance.

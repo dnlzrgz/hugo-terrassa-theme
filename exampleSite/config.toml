@@ -4,19 +4,15 @@ author = "Daniel Zaragoza (Danielkvist)"
 googleAnalytics = ""
 defaultContentLanguage = "en"
 language = "en-US"
-paginate = 3 # Number of posts per page
+paginate = 3
 
 theme = "hugo-terrassa-theme"
 themesDir = "../.." # Not necessary on production sites
 
-[outputs]
-    home = ["HTML", "RSS"]
-    page = ["HTML", "RSS"]
-
 [params]
     description = "Terrassa is a simple, fast and responsive theme for Hugo with a strong focus on accessibility made from scratch."
-    favicon = "favicon.ico" # Relative URL
-    logo = "" # Absolute URL
+    favicon = "favicon.ico"
+    logo = ""
 
 [params.hero]
     textColor = "" # Empty for default color
@@ -34,7 +30,7 @@ themesDir = "../.." # Not necessary on production sites
     integrity = "sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
 
 [params.form] # Contact form
-    netlify = true # Use only if you are using Netlify
+    netlify = true
     action = "https://formspree.io/your@email.com"
     method = "POST"
     inputNameName = "name"
@@ -60,7 +56,7 @@ themesDir = "../.." # Not necessary on production sites
     skype = ""
     address = "419 Creek St. Revere, MA 02151"
 
-[params.social] # Social networks
+[params.social]
     twitter = "https://twitter.com/john"
     facebook = "https://facebook.com/john"
     github = "https://github.com/john"

@@ -429,7 +429,7 @@
 }
 
 .footer__social__link {
-	background-color: var(--primary-text);
+	background-color: var(--white);
 	border-radius: 50%;
 	color: var(--white);
 	font-size: var(--subheader);
@@ -442,7 +442,7 @@
 
 .footer__social__link::after {
 	background: transparent;
-	border: 1.5px solid var(--primary-text);
+	border: 1.5px solid var(--white);
 	border-radius: 50%;
 	bottom: 0;
 	content: "";
@@ -457,12 +457,12 @@
 .footer__social__link:hover,
 .footer__social__link:focus {
 	background-color: transparent;
-	color: var(--secondary-text);
+	color: var(--white);
 }
 
 .footer__social__link:hover::after,
 .footer__social__link:focus::after {
-	border-color: var(--secondary-text);
+	border-color: var(--white);
 	transform: scale(1.5);
 }
 
@@ -480,7 +480,7 @@
 }
 
 .footer__contact__item > span {
-	color: var(--primary-text);
+	color: var(--white);
 	margin-right: 0.25rem;
 }
 
@@ -509,6 +509,7 @@
 	grid-area: copy;
 	justify-content: flex-end;
 	padding: 1.75rem;
+	color: var(--white);
 }
 
 .copy > p {

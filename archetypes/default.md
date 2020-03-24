@@ -3,7 +3,7 @@ title: "{{ replace .Name "-" " " | title }}"
 description: ""
 date: {{ .Date }}
 publishDate: {{ .Date }}
-author: "John Doe"
+author: ""
 images: []
 draft: true
 tags: []

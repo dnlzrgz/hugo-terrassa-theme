@@ -1,0 +1,12 @@
+@media only screen and (max-width: 1024px) {
+	.hero {
+		background-position: -15% 0;
+		background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .hero {
+		background-position: -20% 0;
+	}
+}

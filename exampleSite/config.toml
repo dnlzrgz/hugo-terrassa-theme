@@ -98,8 +98,10 @@ themesDir = "../.." # Not necessary on production sites
     [languages.en]
         languageName = "en"
         weight = 1
+        contentDir = "content/en"
       [languages.de]
         languageName = "de"
         weight = 2
+        contentDir = "content/de"
         title = "Das ist der deutsche Titel"
         description = "Das ist die deutsche Beschreibung"

@@ -101,3 +101,5 @@ themesDir = "../.." # Not necessary on production sites
       [languages.de]
         languageName = "de"
         weight = 2
+        title = "Das ist der deutsche Titel"
+        description = "Das ist die deutsche Beschreibung"

@@ -6,6 +6,12 @@
 	<title>{{ $.Site.Title }} - {{ .Title }}</title>
 	<link rel="icon" href="{{ $.Site.BaseURL }}{{ $.Site.Params.favicon }}" />
 	<meta name="description" content="{{ $.Site.Params.description }}" />
+	
+	{{ if .IsTranslated }}
+	{{ range .AllTranslations }}
+	<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+	{{ end }}
+	{{ end }}
 
 	{{ hugo.Generator }}
 

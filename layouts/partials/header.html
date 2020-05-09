@@ -11,4 +11,7 @@
 
     {{ partial "menu.html" . }}
     {{ partial "hamburger-menu.html" . }}
+    {{ if $.Site.Params.languageSwitcher.show }}
+    {{ partial "language-switcher.html" . }}
+    {{ end }}
 </header>

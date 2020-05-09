@@ -94,6 +94,9 @@ themesDir = "../.." # Not necessary on production sites
         disable = false
         privacyEnhanced = true
 
+[params.languageSwitcher]
+    show = true
+
 [languages]
     [languages.en]
         languageName = "en"

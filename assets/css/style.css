@@ -583,3 +583,21 @@
 	transform: scale(0, 0);
 	transition: 0s;
 }
+
+/* LANGUAGE SWITCHER */
+.LangNav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem 4.5rem;
+}
+
+.LangNav a {
+  margin: 0 0.2rem;
+}
+.LangNav span:first-child::after {
+  content: "|";
+}
+a.language.active {
+  opacity: 0.5;
+}

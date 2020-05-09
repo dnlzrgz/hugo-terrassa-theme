@@ -603,3 +603,9 @@ span.language.active {
 .header.has-LangNav {
 	grid-template-columns: auto 1fr auto;
 }
+
+@media (max-width:768px) {
+  .header.has-LangNav .hamburger-menu .toggle {
+    right: 1.75rem;
+  }
+}

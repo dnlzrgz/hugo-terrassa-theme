@@ -587,7 +587,7 @@
 /* LANGUAGE SWITCHER */
 .LangNav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
   margin: 1rem 4.5rem;
 }
@@ -598,4 +598,8 @@
 }
 span.language.active {
   opacity: 0.5;
+}
+
+.header.has-LangNav {
+	grid-template-columns: auto 1fr auto;
 }

@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header {{ if $.Site.Params.languageSwitcher.show }} has-LangNav{{ end }}">
     <div class="header__title">
         <a href="{{ $.Site.BaseURL }}" class="header__title__link" alt="Home">
             {{ if $.Site.Params.logo }}

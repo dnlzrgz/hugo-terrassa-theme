@@ -1,6 +1,6 @@
 <header class="header {{ if $.Site.Params.languageSwitcher.show }} has-LangNav{{ end }}">
     <div class="header__title">
-        <a href="{{ $.Site.BaseURL }}" class="header__title__link" alt="Home">
+        <a href="{{ "/" | relLangURL }}" class="header__title__link" alt="Home">
             {{ if $.Site.Params.logo }}
             <img src="{{ $.Site.BaseURL }}{{ $.Site.Params.logo }}" class="header__title__logo" alt="{{ $.Site.Title }}">
             {{ else }}

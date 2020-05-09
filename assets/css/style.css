@@ -592,12 +592,10 @@
   margin: 1rem 4.5rem;
 }
 
-.LangNav a {
-  margin: 0 0.2rem;
-}
 .LangNav span:first-child::after {
   content: "|";
+  margin: 0 0.2rem;
 }
-a.language.active {
+span.language.active {
   opacity: 0.5;
 }

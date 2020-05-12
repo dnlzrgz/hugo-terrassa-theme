@@ -1,13 +1,16 @@
-{{ if .Site.IsMultiLingual }}
-  <nav class="LangNav">
-	{{ range .Site.Languages }}
-	{{ if eq . $.Site.Language }}
-		<span class="active language">{{ .LanguageName }}</span>
-  {{ else }}
-	{{ range $.Translations }}
-		<span><a title="{{ .Language.LanguageName }}" href="{{ .Permalink }}" class="">{{ .Language.LanguageName }}</a></span>
-	{{ end }}
-	{{ end }}
-	{{ end }}
-  </nav>
-{{ end }}
+<nav class="LangNav">
+{{ $siteLanguages := site.Languages}}
+{{ $pageLang := .Page.Lang}}
+{{- range .Page.AllTranslations }}
+    {{ $translation := . }}
+    {{- range sort $siteLanguages "Weight" "asc" }}
+        {{- if eq $translation.Lang .Lang }}
+            {{ if eq $pageLang .Lang}}
+                <span class="active language">{{ .Params.languageName }}</span>
+            {{ else }}
+                <span><a  href="{{ $translation.Permalink | relURL }}">{{ .Params.languageName }}</a></span>
+            {{ end }}
+        {{- end }}
+    {{- end }}
+{{- end }}
+</nav>

@@ -592,7 +592,7 @@
   margin: 1rem 4.5rem;
 }
 
-.LangNav span:first-child::after {
+.LangNav span:not(:last-child)::after {
   content: "|";
   margin: 0 0.2rem;
 }

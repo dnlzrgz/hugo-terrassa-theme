@@ -14,6 +14,7 @@ Terrassa is a simple, fast and responsive theme for Hugo with a strong focus on 
 - Customizable call to action on the home page.
 - Contact form.
 - Ready for blogging.
+- Multilingual Support
 
 ## Some things that will be added in the future
 
@@ -86,7 +87,7 @@ There's a lot more information about the basic configuration of an Hugo site [he
 ### Call To Action
 
 ```toml
-[params.cta] # Call To Action 
+[params.cta] # Call To Action
     show = true
     cta = "Contact"  # Text message of the CTA
     link = "contact" # Relative URL
@@ -328,3 +329,61 @@ $ hugo new contact/_index.md -k page
 ```
 
 The *title* and *description* will be used as the main title and subtitle respectively with a contact form. The rest of the options are defined in the [config.toml](https://github.com/danielkvist/hugo-terrassa-theme/blob/master/exampleSite/config.toml).
+
+## Multilingual Support
+
+If your site is multilingual, add each language to your config.toml parameters with the following structure:
+
+```bash
+[languages]
+    [languages.en]
+        languageName = "en"
+        weight = 1
+        contentDir = "content/en"
+      [languages.de]
+        languageName = "de"
+        weight = 2
+        contentDir = "content/de"
+      [languages.de]
+        languageName = "de"
+        weight = 3
+        contentDir = "content/fr"
+```
+
+The theme assumes you have one default language, defined in config.toml as defaultContentLanguage. These pages will be at root of the URL, while the other languages will be in their own subdirectory.
+
+You can overwrite all Site parameters in config.url by adding them to the respective language, for example:
+
+```bash
+[languages.de]
+  languageName = "de"
+  weight = 2
+  contentDir = "content/de"
+  title = "Das ist der deutsche Titel"
+  description = "Das ist die deutsche Beschreibung"
+```
+
+For translating the contact form, add these parameters:
+
+```bash
+[languages.de.params]
+  [languages.de.params.form] # Translate contact form fields
+    inputNameLabel = "Name"
+    inputNamePlaceholder = "Dein Name"
+    inputEmailLabel = "E-mail"
+    inputEmailPlaceholder = "Deine E-Mail-Adresse"
+    inputMsgLabel = "Schreib etwas"
+    inputSubmitValue = "Abschicken"
+    [languages.de.params.cta] # Translate Call To Action
+        show = true
+        cta = "Kontakt"
+        link = "de/kontakt/" # Relative URL
+```
+
+Activate the language switcher in the header by setting:
+
+```bash
+[params.languageSwitcher]
+    show = true
+```
+Read more about Hugo's Multilingual mode here: https://gohugo.io/content-management/multilingual/

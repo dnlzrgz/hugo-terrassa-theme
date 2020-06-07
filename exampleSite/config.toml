@@ -3,7 +3,6 @@ title = "Terrassa"
 author = "Daniel Zaragoza (Danielkvist)"
 googleAnalytics = ""
 defaultContentLanguage = "en"
-language = "en-US"
 paginate = 3
 
 theme = "hugo-terrassa-theme"
@@ -17,7 +16,7 @@ themesDir = "../.." # Not necessary on production sites
 [params.hero]
     textColor = "" # Empty for default color
 
-[params.cta] # Call To Action 
+[params.cta] # Call To Action
     show = true
     cta = "Contact"
     link = "contact" # Relative URL
@@ -94,3 +93,30 @@ themesDir = "../.." # Not necessary on production sites
     [privacy.youtube]
         disable = false
         privacyEnhanced = true
+
+[params.languageSwitcher]
+    show = true
+
+[languages]
+    [languages.en]
+        languageName = "en"
+        weight = 1
+        contentDir = "content/en"
+      [languages.de]
+        languageName = "de"
+        weight = 2
+        contentDir = "content/de"
+        title = "Das ist der deutsche Titel"
+        description = "Das ist die deutsche Beschreibung"
+        [languages.de.params]
+          [languages.de.params.form] # Translate contact form fields
+            inputNameLabel = "Name"
+            inputNamePlaceholder = "Dein Name"
+            inputEmailLabel = "E-mail"
+            inputEmailPlaceholder = "Deine E-Mail-Adresse"
+            inputMsgLabel = "Schreib etwas"
+            inputSubmitValue = "Abschicken"
+            [languages.de.params.cta] # Translate Call To Action
+                show = true
+                cta = "Kontakt"
+                link = "de/kontakt/" # Relative URL

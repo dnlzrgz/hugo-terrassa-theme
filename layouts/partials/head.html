@@ -7,6 +7,12 @@
 	<link rel="icon" href="{{ $.Site.BaseURL }}{{ $.Site.Params.favicon }}" />
 	<meta name="description" content="{{ $.Site.Params.description }}" />
 
+	{{ if .IsTranslated }}
+	{{ range .AllTranslations }}
+	<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+	{{ end }}
+	{{ end }}
+
 	{{ hugo.Generator }}
 
 	{{ if .Site.GoogleAnalytics }}
@@ -15,6 +21,13 @@
 
 	{{ template "_internal/twitter_cards.html" . }}
 	{{ template "_internal/opengraph.html" . }}
+
+	<meta property="og:locale" content="{{ .Site.Language.Lang }}" />
+	{{ if .IsTranslated }}
+	{{ range .Translations }}
+	<meta property="og:locale:alternate" content="{{ .Language.Lang }}" />
+	{{ end }}
+	{{ end }}
 
 	<!-- CSS -->
 	{{ partial "styles.html" . }}

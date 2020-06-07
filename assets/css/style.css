@@ -583,3 +583,29 @@
 	transform: scale(0, 0);
 	transition: 0s;
 }
+
+/* LANGUAGE SWITCHER */
+.LangNav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1rem 4.5rem;
+}
+
+.LangNav span:not(:last-child)::after {
+  content: "|";
+  margin: 0 0.2rem;
+}
+span.language.active {
+  opacity: 0.5;
+}
+
+.header.has-LangNav {
+	grid-template-columns: auto 1fr auto;
+}
+
+@media (max-width:768px) {
+  .header.has-LangNav .hamburger-menu .toggle {
+    right: 1.75rem;
+  }
+}

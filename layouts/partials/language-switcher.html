@@ -1,0 +1,16 @@
+<nav class="LangNav">
+{{ $siteLanguages := site.Languages}}
+{{ $pageLang := .Page.Lang}}
+{{- range .Page.AllTranslations }}
+    {{ $translation := . }}
+    {{- range sort $siteLanguages "Weight" "asc" }}
+        {{- if eq $translation.Lang .Lang }}
+            {{ if eq $pageLang .Lang}}
+                <span class="active language">{{ .Params.languageName }}</span>
+            {{ else }}
+                <span><a  href="{{ $translation.Permalink | relURL }}">{{ .Params.languageName }}</a></span>
+            {{ end }}
+        {{- end }}
+    {{- end }}
+{{- end }}
+</nav>

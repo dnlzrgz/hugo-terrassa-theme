@@ -344,8 +344,8 @@ If your site is multilingual, add each language to your config.toml parameters w
         languageName = "de"
         weight = 2
         contentDir = "content/de"
-      [languages.de]
-        languageName = "de"
+      [languages.fr]
+        languageName = "fr"
         weight = 3
         contentDir = "content/fr"
 ```

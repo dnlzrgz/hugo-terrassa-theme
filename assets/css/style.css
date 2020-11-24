@@ -171,18 +171,20 @@
 
 /* CTA */
 .cta__btn {
-	margin-top: 4.5rem;
+	margin-top: 0.5rem;
 }
 
 /* SECTION */
 .section {
 	margin: 2.75rem 24%;
+	margin-top: 0rem;
 	text-justify: distribute;
 }
 
 .section__title {
 	padding: 0 20%;
 	margin-bottom: 1.75rem;
+	margin-top: 0rem;
 	text-align: center;
 }
 
@@ -341,6 +343,7 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	min-height: 90vh;
+	margin: 0 1.75rem 0;
 }
 
 .contact__content {

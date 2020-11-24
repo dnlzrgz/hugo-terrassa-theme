@@ -1,12 +1,17 @@
+.hero {
+	background-size: contain;
+	max-height: 85%;
+}
+
 @media only screen and (max-width: 1024px) {
 	.hero {
-		background-position: -15% 0;
+		background-position: -65% 0;
 		background-size: cover;
     }
 }
 
 @media only screen and (max-width: 576px) {
     .hero {
-		background-position: -20% 0;
+		background-position: -85% 0;
 	}
 }

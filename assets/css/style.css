@@ -587,3 +587,10 @@
 	transform: scale(0, 0);
 	transition: 0s;
 }
+
+/* LUIS CUSTOM STYLE FOR CENTERING IMAGE */
+main>p>img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

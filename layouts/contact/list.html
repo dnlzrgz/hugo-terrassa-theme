@@ -18,6 +18,14 @@
                     aria-labelledby="{{ $.Site.Params.form.inputNameName }}" required>
             </div>
 
+            <!-- Phone Number -->
+            <div class="contact__field contact__field--tel">
+                <label for="{{ $.Site.Params.form.inputPhoneName }}">{{ $.Site.Params.form.inputPhoneLabel }}</label>
+                <input type="tel" name="{{ $.Site.Params.form.inputPhoneName }}" placeholder="{{ $.Site.Params.form.inputPhonePlaceholder }}"
+                    class="contact__form__input contact__form__tel" id="{{ $.Site.Params.form.inputPhoneName }}"
+                    aria-labelledby="{{ $.Site.Params.form.InputPhoneName }}" required>
+            </div>
+
             <!-- Email -->
             <div class="contact__field contact__field--email">
                 <label for="{{ $.Site.Params.form.inputEmailName }}">{{ $.Site.Params.form.inputEmailLabel }}</label>

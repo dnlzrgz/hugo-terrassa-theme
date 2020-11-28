@@ -83,7 +83,7 @@
 	}
 
 	.contact__form {
-		grid-template-areas: "name" "email" "msg" "submit";
+		grid-template-areas: "name" "email" "tel" "msg" "submit";
 	}
 
 	.contact__field > input {

@@ -352,7 +352,7 @@
 
 .contact__form {
 	display: grid;
-	grid-template-areas: "name email" "msg msg" "submit submit";
+	grid-template-areas: "name email" "tel tel" "msg msg" "submit submit";
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(3, auto);
 	margin-top: 1.75rem;

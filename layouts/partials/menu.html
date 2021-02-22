@@ -3,10 +3,19 @@
         {{ $current := . }}
         {{ range .Site.Menus.main }}
         <li class="menu__items__item" aria-label="{{ .Name }}">
-            <a href="{{ .URL }}" class="menu__items__item__link {{ if $current.IsMenuCurrent "main" . }}active{{ end }}"
+            <a href="{{ .URL }}" class="menu__items__item__link {{ if or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}active{{ end }}"
                 alt="{{ .Name }}" role="menuitem">
-                {{ .Name }}
+                {{ .Name }}{{ if .HasChildren }}&nbsp;<span class="drop-icon" for="{{ .Name }}">▾</span>{{ end }}
             </a>
+	  {{ if .HasChildren }}
+	    <ul class="submenu__list">
+	    {{ range .Children }}
+	      <li class="menu__items__item">
+		<a class="menu__items__item__link {{ if $current.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+	      </li>
+	    {{ end }}
+	    </ul>
+	  {{ end }}
         </li>
         {{ end }}
     </ul>

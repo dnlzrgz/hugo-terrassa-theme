@@ -75,6 +75,7 @@ There's a lot more information about the basic configuration of an Hugo site [he
     description = "" # Description for the meta description tag
     favicon = ""     # Relative URL for your favicon
     logo = ""        # Absolute URL for your logo
+    ribbon = ""      # Text to show as a ribbon on the top right corner of the main page
 ```
 
 ### Hero

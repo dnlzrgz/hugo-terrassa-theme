@@ -609,3 +609,37 @@ span.language.active {
     right: 1.75rem;
   }
 }
+
+.ribbon-wrapper {
+	width: 100%;
+	height: 90vh;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	overflow: hidden;
+}
+.corner-ribbon {
+	width: 20em;
+	position: absolute;
+	top: 9em;
+	right: -4em;
+	left: auto;
+	text-align: center;
+	box-sizing: content-box;
+	overflow: hidden;
+	z-index: 900;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	color: #f0f0f0;
+	background: #e43;
+}
+
+.corner-ribbon.sticky{
+	position: fixed;
+}
+
+.corner-ribbon.shadow{
+	box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+

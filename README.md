@@ -4,6 +4,14 @@ Terrassa is a simple, fast and responsive theme for Hugo with a strong focus on 
 
 ![Hugo Terrassa theme screenshot](https://github.com/danielkvist/hugo-terrassa-theme/blob/master/images/screenshot.png)
 
+## Archived
+
+I have decided to archive the project as I have been and am unable to give it the necessary support.
+
+I started Terrassa as a way to experiment with Hugo and the Go template system and the truth is that I didn't expect the support that the project has been getting over time. Unfortunately over time I have had to move on to working with other technologies and on other projects and have never had enough time to re-familiarise myself with the code and continue working on the project.
+
+Many thanks to all the people who have used Terrassa, who have sent PRs and above all to the people who encouraged me and talked about how they were using Terrassa to bring their projects to life.
+
 ## Features
 
 - Coherent responsive design.
@@ -15,13 +23,6 @@ Terrassa is a simple, fast and responsive theme for Hugo with a strong focus on 
 - Contact form.
 - Ready for blogging.
 - Multilingual Support
-
-## Some things that will be added in the future
-
-- A better hamburger menu.
-- Service Workers.
-- Easier ways to customize fonts and colors.
-- Support for comments.
 
 ## Installation
 
@@ -43,7 +44,7 @@ $ git submodule add https://github.com/danielkvist/hugo-terrassa-theme.git terra
 
 > You can also download the last release [here](https://github.com/danielkvist/hugo-terrassa-theme/releases).
 
-Back to your Hugo site directory open the *config.toml* file and add or change the following line:
+Back to your Hugo site directory open the _config.toml_ file and add or change the following line:
 
 ```toml
 theme = "terrassa"
@@ -211,7 +212,7 @@ To learn more about privacy configuration check the [official documentation](htt
 
 ### Custom CSS
 
-To add custom CSS you have to create a folder called ```assets``` in the root of your project. Then, create another folder called ```css``` inside ```assets```. And finally, a file called ```custom.css``` inside ```css``` with your styles.
+To add custom CSS you have to create a folder called `assets` in the root of your project. Then, create another folder called `css` inside `assets`. And finally, a file called `custom.css` inside `css` with your styles.
 
 ```bash
 $ mkdir -p ./assets/css/
@@ -220,9 +221,10 @@ $ mkdir -p ./assets/css/
 ## Archetypes
 
 Terrassa includes three base archetypes:
-* *default*: for content such as blogs posts.
-* *section*: for the sections on your Home page.
-* *page*: for pages like the About page.
+
+- _default_: for content such as blogs posts.
+- _section_: for the sections on your Home page.
+- _page_: for pages like the About page.
 
 So be careful. Creating a new site with Hugo also creates a default archetype that replaces the one provided by Terrassa.
 
@@ -254,10 +256,11 @@ weight: 0
 ```
 
 Some properties are used as follows:
-* *title*: is the name that will be displayed in the menu. In the rest of the single pages the main title of the content.
-* *description*: in the case of the home page the description is not shown. In the rest of the single pages it is shown as a subtitle.
-* *images*: in the case of the home page the first image is used as the background image for the hero and to share on social networks (with [Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards.html) and [Facebook Graph](https://developers.facebook.com/docs/graph-api/)). In every other page or post is used only for share on social networks.
-* *weight*: sets the order of the items in the menu.
+
+- _title_: is the name that will be displayed in the menu. In the rest of the single pages the main title of the content.
+- _description_: in the case of the home page the description is not shown. In the rest of the single pages it is shown as a subtitle.
+- _images_: in the case of the home page the first image is used as the background image for the hero and to share on social networks (with [Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards.html) and [Facebook Graph](https://developers.facebook.com/docs/graph-api/)). In every other page or post is used only for share on social networks.
+- _weight_: sets the order of the items in the menu.
 
 ## Home page Sections
 
@@ -278,9 +281,9 @@ weight: 0
 ---
 ```
 
-The *title* is used as the title of your new section and the content is the body. At this moment the *description* is not used for anything.
+The _title_ is used as the title of your new section and the content is the body. At this moment the _description_ is not used for anything.
 
-The *weight* defines the order in case of having more than one section.
+The _weight_ defines the order in case of having more than one section.
 
 ### Blog or List pages
 
@@ -290,7 +293,7 @@ To create a Blog or a page with a similar structure follow these steps:
 $ hugo new posts/_index.md -k page
 ```
 
-> In this case it is only necessary to set, if wanted, the *title* and the *weight* in the *_index.md*.
+> In this case it is only necessary to set, if wanted, the _title_ and the _weight_ in the _\_index.md_.
 
 To add a new posts run the following command:
 
@@ -312,11 +315,12 @@ draft: true
 tags: []
 ---
 ```
-The *title* and *description* are used as the main title and subtitle respectively.
+
+The _title_ and _description_ are used as the main title and subtitle respectively.
 
 > You can find more information about each parameter in the [official documentation](https://gohugo.io/content-management/front-matter/).
 
-Then, the corresponding section will show a list of cards with the *title*, the *date*, a *summary of the content* (truncated to 480 words) and a list of *tags* if any.
+Then, the corresponding section will show a list of cards with the _title_, the _date_, a _summary of the content_ (truncated to 480 words) and a list of _tags_ if any.
 
 ![Hugo Terrassa theme Blog section screenshot](https://github.com/danielkvist/hugo-terrassa-theme/blob/master/images/blog-screenshot.png)
 
@@ -328,7 +332,7 @@ For the contact page follow these instructions:
 $ hugo new contact/_index.md -k page
 ```
 
-The *title* and *description* will be used as the main title and subtitle respectively with a contact form. The rest of the options are defined in the [config.toml](https://github.com/danielkvist/hugo-terrassa-theme/blob/master/exampleSite/config.toml).
+The _title_ and _description_ will be used as the main title and subtitle respectively with a contact form. The rest of the options are defined in the [config.toml](https://github.com/danielkvist/hugo-terrassa-theme/blob/master/exampleSite/config.toml).
 
 ## Multilingual Support
 
@@ -386,4 +390,5 @@ Activate the language switcher in the header by setting:
 [params.languageSwitcher]
     show = true
 ```
+
 Read more about Hugo's Multilingual mode here: https://gohugo.io/content-management/multilingual/

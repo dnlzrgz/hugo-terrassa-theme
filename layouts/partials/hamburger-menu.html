@@ -11,6 +11,16 @@
                 <a href="{{ .URL }}" class="hamburger__items__item__link" alt="{{ .Name }}" role="menuitem">
                     {{ .Name }}
                 </a>
+		{{ if .HasChildren }}
+		    <!--input type="checkbox" id="{{ .Name }}"-->
+		    <ul class="hamburger__items__item submenu__list">
+		    {{ range .Children }}
+		      <li class="hamburger__items__item">
+			<a class="hamburger__items__item__link " href="{{ .URL }}">{{ .Name }}</a>
+		      </li>
+		    {{ end }}
+		    </ul>
+		{{ end }}
             </li>
             {{ end }}
         </ul>
